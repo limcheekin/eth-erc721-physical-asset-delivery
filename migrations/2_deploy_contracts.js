@@ -1,6 +1,5 @@
-const Greeter = artifacts.require("Greeter");
+const AisthisiToken = artifacts.require("AisthisiToken");
 
 module.exports = function (deployer) {
-    const greeting = 'Hello, ';
-    deployer.deploy(Greeter, greeting);
+    deployer.deploy(AisthisiToken);
 };
