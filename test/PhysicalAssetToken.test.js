@@ -6,14 +6,14 @@ const LOCK_IN_SECONDS = 10; //lock it in 10 seconds to test unlock
 let timestampLockedFrom = Math.round(Date.now() / 1000) + LOCK_IN_SECONDS;
 let unlockCodeHash = web3.utils.sha3(correctUnlockCode); //double hashed
 
-contract('PhysicalAssetToken: test mint and lock', (accounts) => {
+contract('PhysicalAssetToken: mint, lock and royalties', (accounts) => {
     const [deployerAddress, tokenHolderOneAddress, tokenHolderTwoAddress] = accounts;
 
     before(async () => {
         this.token = await PhysicalAssetToken.deployed()
     })
 
-    it('is possible to mint tokens for the minter role', async () => {
+    it('is possible to mint tokens', async () => {
         await this.token.mint(tokenHolderOneAddress, timestampLockedFrom, unlockCodeHash); //minting works
         await truffleAssert.fails(this.token.transferFrom(deployerAddress, tokenHolderOneAddress, 0)); //transferring for others doesn't work
 
@@ -64,5 +64,18 @@ contract('PhysicalAssetToken: test mint and lock', (accounts) => {
     it('is possible to retrieve the correct token URI', async () => {
         let metadata = await this.token.tokenURI(0);
         assert.equal('https://eth-erc721-physical-asset-delivery.vercel.app/metadata/0.json', metadata);
-    })
+    });
+
+    it('is possible to set royalties', async () => {
+        await this.token.setRoyalties(0, deployerAddress, 1000); // 1000 basis point = 10%
+        let royalties = await this.token.getRaribleV2Royalties(0);
+        assert.equal(royalties[0].value, 1000);
+        assert.equal(royalties[0].account, deployerAddress);
+    });
+
+    it('is possible to get royalty amount', async () => {
+        let royaltyInfo = await this.token.royaltyInfo(0, 110000);
+        assert.equal(royaltyInfo.royaltyAmount.toString(), '11000');
+        assert.equal(royaltyInfo.receiver, deployerAddress);
+    });
 });
