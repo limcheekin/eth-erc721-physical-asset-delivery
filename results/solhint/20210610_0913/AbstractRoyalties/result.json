@@ -1,0 +1,17 @@
+{
+  "contract": "AbstractRoyalties",
+  "tool": "solhint",
+  "start": 1633511895.0992737,
+  "end": 1633511895.9598708,
+  "duration": 0.8605971336364746,
+  "analysis": [
+    {
+      "file": "/home/runner/work/eth-erc721-physical-asset-delivery/eth-erc721-physical-asset-delivery/contracts/@rarible/royalties/contracts/impl/AbstractRoyalties.sol",
+      "line": "7",
+      "column": "10",
+      "message": "Expected indentation of 0 spaces but found 9",
+      "level": "Error",
+      "type": "indent"
+    }
+  ]
+}

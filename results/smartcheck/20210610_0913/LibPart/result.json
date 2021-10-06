@@ -1,0 +1,17 @@
+{
+  "contract": "LibPart",
+  "tool": "smartcheck",
+  "start": 1633511862.1716301,
+  "end": 1633511864.4196463,
+  "duration": 2.248016119003296,
+  "analysis": [
+    {
+      "name": "SOLIDITY_PRAGMAS_VERSION",
+      "patternId": "23fc32",
+      "severity": 1,
+      "line": 3,
+      "column": 16,
+      "content": "^"
+    }
+  ]
+}

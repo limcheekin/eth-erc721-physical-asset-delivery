@@ -1,0 +1,10 @@
+{
+  "contract": "PhysicalAssetToken",
+  "tool": "manticore",
+  "start": 1633511903.8299525,
+  "end": 1633511905.1584659,
+  "duration": 1.3285133838653564,
+  "analysis": [
+    []
+  ]
+}

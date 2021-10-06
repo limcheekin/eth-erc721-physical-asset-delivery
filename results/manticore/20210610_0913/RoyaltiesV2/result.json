@@ -1,0 +1,10 @@
+{
+  "contract": "RoyaltiesV2",
+  "tool": "manticore",
+  "start": 1633511622.4485185,
+  "end": 1633511639.118022,
+  "duration": 16.669503450393677,
+  "analysis": [
+    []
+  ]
+}
