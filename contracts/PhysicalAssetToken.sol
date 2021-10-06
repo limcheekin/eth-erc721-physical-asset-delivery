@@ -5,7 +5,7 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract AisthisiToken is ERC721, Ownable {
+contract PhysicalAssetToken is ERC721, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
@@ -15,7 +15,7 @@ contract AisthisiToken is ERC721, Ownable {
 
     event TokenUnlocked(uint256 tokenId, address unlockerAddress);
 
-    constructor() ERC721("AisthisiToken", "AIS") {}
+    constructor() ERC721("PhysicalAssetToken", "PA") {}
 
     function _beforeTokenTransfer(
         address from,
@@ -25,7 +25,7 @@ contract AisthisiToken is ERC721, Ownable {
         require(
             tokenLockedFromTimestamp[tokenId] > block.timestamp ||
                 tokenUnlocked[tokenId],
-            "AishtisiToken: Token locked"
+            "PhysicalAssetToken: Token locked"
         );
         super._beforeTokenTransfer(from, to, tokenId);
     }
@@ -33,11 +33,11 @@ contract AisthisiToken is ERC721, Ownable {
     function unlockToken(bytes32 unlockHash, uint256 tokenId) public {
         require(
             msg.sender == ownerOf(tokenId),
-            "AishtisiToken: Only the Owner can unlock the Token"
+            "PhysicalAssetToken: Only the Owner can unlock the Token"
         ); //not 100% sure about that one yet
         require(
             keccak256(abi.encode(unlockHash)) == tokenUnlockCodeHashes[tokenId],
-            "AishtisiToken: Unlock Code Incorrect"
+            "PhysicalAssetToken: Unlock Code Incorrect"
         );
         tokenUnlocked[tokenId] = true;
         emit TokenUnlocked(tokenId, msg.sender);
@@ -68,6 +68,6 @@ contract AisthisiToken is ERC721, Ownable {
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
-        return "https://aisthisi.art/metadata/";
+        return "https://eth-erc721-physical-asset-delivery.vercel.app/metadata/";
     }
 }

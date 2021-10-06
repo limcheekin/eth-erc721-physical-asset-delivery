@@ -1,4 +1,4 @@
-const AisthisiToken = artifacts.require('AisthisiToken');
+const PhysicalAssetToken = artifacts.require('PhysicalAssetToken');
 const truffleAssert = require('truffle-assertions');
 
 let correctUnlockCode = web3.utils.sha3('test'); //test is the password
@@ -6,11 +6,11 @@ const LOCK_IN_SECONDS = 10; //lock it in 10 seconds to test unlock
 let timestampLockedFrom = Math.round(Date.now() / 1000) + LOCK_IN_SECONDS;
 let unlockCodeHash = web3.utils.sha3(correctUnlockCode); //double hashed
 
-contract('AisthisiToken: test mint and lock', (accounts) => {
+contract('PhysicalAssetToken: test mint and lock', (accounts) => {
     const [deployerAddress, tokenHolderOneAddress, tokenHolderTwoAddress] = accounts;
 
     before(async () => {
-        this.token = await AisthisiToken.deployed()
+        this.token = await PhysicalAssetToken.deployed()
     })
 
     it('is possible to mint tokens for the minter role', async () => {
@@ -31,7 +31,7 @@ contract('AisthisiToken: test mint and lock', (accounts) => {
         await truffleAssert.fails(
             this.token.transferFrom(tokenHolderTwoAddress, tokenHolderOneAddress, 0, { from: tokenHolderTwoAddress }),
             truffleAssert.ErrorType.REVERT,
-            'AishtisiToken: Token locked',
+            'PhysicalAssetToken: Token locked',
         );
     });
 
@@ -39,7 +39,7 @@ contract('AisthisiToken: test mint and lock', (accounts) => {
         await truffleAssert.fails(
             this.token.unlockToken(correctUnlockCode, 0, { from: deployerAddress }),
             truffleAssert.ErrorType.REVERT,
-            'AishtisiToken: Only the Owner can unlock the Token',
+            'PhysicalAssetToken: Only the Owner can unlock the Token',
         );
     });
 
@@ -48,7 +48,7 @@ contract('AisthisiToken: test mint and lock', (accounts) => {
         await truffleAssert.fails(
             this.token.unlockToken(wrongUnlockCode, 0, { from: tokenHolderTwoAddress }),
             truffleAssert.ErrorType.REVERT,
-            'AishtisiToken: Unlock Code Incorrect',
+            'PhysicalAssetToken: Unlock Code Incorrect',
         );
     });
 
@@ -63,6 +63,6 @@ contract('AisthisiToken: test mint and lock', (accounts) => {
 
     it('is possible to retrieve the correct token URI', async () => {
         let metadata = await this.token.tokenURI(0);
-        assert.equal('https://aisthisi.art/metadata/0.json', metadata);
+        assert.equal('https://eth-erc721-physical-asset-delivery.vercel.app/metadata/0.json', metadata);
     })
 });

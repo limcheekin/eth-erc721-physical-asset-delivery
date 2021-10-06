@@ -1,5 +1,5 @@
-const AisthisiToken = artifacts.require("AisthisiToken");
+const PhysicalAssetToken = artifacts.require("PhysicalAssetToken");
 
 module.exports = function (deployer) {
-    deployer.deploy(AisthisiToken);
+    deployer.deploy(PhysicalAssetToken);
 };
