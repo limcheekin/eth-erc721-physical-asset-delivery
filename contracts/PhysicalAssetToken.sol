@@ -4,8 +4,11 @@ pragma solidity ^0.8.0;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "./@rarible/royalties/contracts/impl/RoyaltiesV2Impl.sol";
+import "./@rarible/royalties/contracts/LibPart.sol";
+import "./@rarible/royalties/contracts/LibRoyaltiesV2.sol";
 
-contract PhysicalAssetToken is ERC721, Ownable {
+contract PhysicalAssetToken is ERC721, Ownable, RoyaltiesV2Impl {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
@@ -68,6 +71,31 @@ contract PhysicalAssetToken is ERC721, Ownable {
     }
 
     function _baseURI() internal view virtual override returns (string memory) {
-        return "https://eth-erc721-physical-asset-delivery.vercel.app/metadata/";
+        return
+            "https://eth-erc721-physical-asset-delivery.vercel.app/metadata/";
+    }
+
+    function setRoyalties(
+        uint256 _tokenId,
+        address payable _royaltiesReceipientAddress,
+        uint96 _percentageBasisPoints
+    ) public onlyOwner {
+        LibPart.Part[] memory _royalties = new LibPart.Part[](1);
+        _royalties[0].value = _percentageBasisPoints;
+        _royalties[0].account = _royaltiesReceipientAddress;
+        _saveRoyalties(_tokenId, _royalties);
+    }
+
+    function supportsInterface(bytes4 interfaceId)
+        public
+        view
+        virtual
+        override(ERC721)
+        returns (bool)
+    {
+        if (interfaceId == LibRoyaltiesV2._INTERFACE_ID_ROYALTIES) {
+            return true;
+        }
+        return super.supportsInterface(interfaceId);
     }
 }
