@@ -1,0 +1,41 @@
+{
+  "contract": "AisthisiToken",
+  "tool": "solhint",
+  "start": 1633489306.3742077,
+  "end": 1633489311.9852703,
+  "duration": 5.611062526702881,
+  "analysis": [
+    {
+      "file": "/home/runner/work/eth-erc721-physical-asset-delivery/eth-erc721-physical-asset-delivery/contracts/AisthisiToken.sol",
+      "line": "20",
+      "column": "2",
+      "message": "Line length must be no more than 120 but current length is 126.",
+      "level": "Error",
+      "type": "max-line-length"
+    },
+    {
+      "file": "/home/runner/work/eth-erc721-physical-asset-delivery/eth-erc721-physical-asset-delivery/contracts/AisthisiToken.sol",
+      "line": "25",
+      "column": "2",
+      "message": "Line length must be no more than 120 but current length is 137.",
+      "level": "Error",
+      "type": "max-line-length"
+    },
+    {
+      "file": "/home/runner/work/eth-erc721-physical-asset-delivery/eth-erc721-physical-asset-delivery/contracts/AisthisiToken.sol",
+      "line": "26",
+      "column": "2",
+      "message": "Line length must be no more than 120 but current length is 125.",
+      "level": "Error",
+      "type": "max-line-length"
+    },
+    {
+      "file": "/home/runner/work/eth-erc721-physical-asset-delivery/eth-erc721-physical-asset-delivery/contracts/AisthisiToken.sol",
+      "line": "42",
+      "column": "5",
+      "message": "Expected indentation of 8 spaces but found 4",
+      "level": "Error",
+      "type": "indent"
+    }
+  ]
+}
