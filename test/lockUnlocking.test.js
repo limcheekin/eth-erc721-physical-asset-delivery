@@ -3,7 +3,7 @@ const truffleAssert = require('truffle-assertions');
 
 let correctUnlockCode = web3.utils.sha3('test'); //test is the password
 const LOCK_IN_SECONDS = 10; //lock it in 10 seconds to test unlock
-let timestampLockedFrom = Math.round(Date.now() / 1000) + LOCK_IN_SECONDS; 
+let timestampLockedFrom = Math.round(Date.now() / 1000) + LOCK_IN_SECONDS;
 let unlockCodeHash = web3.utils.sha3(correctUnlockCode); //double hashed
 
 contract('AisthisiToken: test mint and lock', (accounts) => {
