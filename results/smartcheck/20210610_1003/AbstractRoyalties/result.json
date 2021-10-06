@@ -1,0 +1,49 @@
+{
+  "contract": "AbstractRoyalties",
+  "tool": "smartcheck",
+  "start": 1633514892.7939298,
+  "end": 1633514895.5424285,
+  "duration": 2.7484986782073975,
+  "analysis": [
+    {
+      "name": "SOLIDITY_ADDRESS_HARDCODED",
+      "patternId": "c67a09",
+      "severity": 1,
+      "line": 13,
+      "column": 53,
+      "content": "0x0"
+    },
+    {
+      "name": "SOLIDITY_EXTRA_GAS_IN_LOOPS",
+      "patternId": "d3j11j",
+      "severity": 1,
+      "line": 12,
+      "column": 8,
+      "content": "for(uinti=0;i<_royalties.length;i++){require(_royalties[i].account!=address(0x0),\"Recipient should be present\");require(_royalties[i].value!=0,\"Royalty value should be positive\");totalValue+=_royalties[i].value;royalties[id].push(_royalties[i]);}"
+    },
+    {
+      "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+      "patternId": "f6f853",
+      "severity": 2,
+      "line": 12,
+      "column": 8,
+      "content": "for(uinti=0;i<_royalties.length;i++){require(_royalties[i].account!=address(0x0),\"Recipient should be present\");require(_royalties[i].value!=0,\"Royalty value should be positive\");totalValue+=_royalties[i].value;royalties[id].push(_royalties[i]);}"
+    },
+    {
+      "name": "SOLIDITY_GAS_LIMIT_IN_LOOPS",
+      "patternId": "f6f853",
+      "severity": 2,
+      "line": 24,
+      "column": 8,
+      "content": "for(uinti=0;i<length;i++){if(royalties[_id][i].account==_from){royalties[_id][i].account=payable(address(uint160(_to)));}}"
+    },
+    {
+      "name": "SOLIDITY_PRAGMAS_VERSION",
+      "patternId": "23fc32",
+      "severity": 1,
+      "line": 3,
+      "column": 16,
+      "content": "^"
+    }
+  ]
+}

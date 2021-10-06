@@ -1,0 +1,12 @@
+{
+  "contract": "AbstractRoyalties",
+  "tool": "maian",
+  "start": 1633514901.9578555,
+  "end": 1633514902.7941022,
+  "duration": 0.8362467288970947,
+  "analysis": {
+    "is_lock_vulnerable": false,
+    "is_prodigal_vulnerable": false,
+    "is_suicidal_vulnerable": false
+  }
+}

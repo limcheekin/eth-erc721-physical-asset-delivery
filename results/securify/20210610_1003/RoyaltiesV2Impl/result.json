@@ -1,0 +1,8 @@
+{
+  "contract": "RoyaltiesV2Impl",
+  "tool": "securify",
+  "start": 1633514880.8496292,
+  "end": 1633514881.5190456,
+  "duration": 0.6694164276123047,
+  "analysis": null
+}
