@@ -1,0 +1,10 @@
+{
+  "contract": "AisthisiToken",
+  "tool": "manticore",
+  "start": 1633491432.1107492,
+  "end": 1633491449.783983,
+  "duration": 17.6732337474823,
+  "analysis": [
+    []
+  ]
+}
