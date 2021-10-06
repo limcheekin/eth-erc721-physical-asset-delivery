@@ -69,7 +69,7 @@ module.exports = {
     // network_id: 2111,   // This network is yours, in the cloud.
     // production: true    // Treats this network as if it was a public net. (default: false)
     // }
-        // Useful for deploying to a public network.
+    // Useful for deploying to a public network.
     // It's important to wrap the provider as a function.
     rinkeby: {
       provider: () => {
@@ -97,15 +97,15 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-       version: "0.8.7",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.9",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
-      // settings: {          // See the solidity docs for advice about optimization and evmVersion
-      //  optimizer: {
-      //    enabled: false,
-      //    runs: 200
-      //  },
-      //  evmVersion: "byzantium"
-      // }
+      settings: {          // See the solidity docs for advice about optimization and evmVersion
+        optimizer: {
+          enabled: true,
+          runs: 200
+        },
+        // evmVersion: "byzantium"
+      }
     }
   },
 
