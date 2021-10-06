@@ -1,0 +1,17 @@
+{
+  "contract": "IRoyaltiesProvider",
+  "tool": "smartcheck",
+  "start": 1633511831.2905183,
+  "end": 1633511833.9559627,
+  "duration": 2.6654443740844727,
+  "analysis": [
+    {
+      "name": "SOLIDITY_PRAGMAS_VERSION",
+      "patternId": "23fc32",
+      "severity": 1,
+      "line": 3,
+      "column": 16,
+      "content": "^"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Solhint",
+          "fullDescription": {
+            "text": "Open source project for linting solidity code. This project provide both security and style guide validations."
+          },
+          "informationUri": "https://protofire.github.io/solhint/",
+          "rules": [
+            {
+              "id": "Ignore_40",
+              "fullDescription": {
+                "text": "Expected indentation of 0 spaces but found 9"
+              },
+              "name": "IgnoreVulnerability",
+              "shortDescription": {
+                "text": "indent"
+              }
+            }
+          ],
+          "version": "3.3.2"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "/royalties/contracts/impl/AbstractRoyalties.sol"
+          },
+          "sourceLanguage": "Solidity"
+        }
+      ],
+      "logicalLocations": [
+        {
+          "kind": "contract",
+          "name": "AbstractRoyalties"
+        }
+      ],
+      "results": [
+        {
+          "message": {
+            "text": "indent"
+          },
+          "level": "error",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "/royalties/contracts/impl/AbstractRoyalties.sol"
+                },
+                "region": {
+                  "snippet": {},
+                  "startColumn": 10,
+                  "startLine": 7
+                }
+              }
+            }
+          ],
+          "ruleId": "Ignore_40"
+        }
+      ]
+    }
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json"
+}

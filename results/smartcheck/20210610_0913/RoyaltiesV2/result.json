@@ -1,0 +1,17 @@
+{
+  "contract": "RoyaltiesV2",
+  "tool": "smartcheck",
+  "start": 1633511639.1916683,
+  "end": 1633511660.723966,
+  "duration": 21.532297611236572,
+  "analysis": [
+    {
+      "name": "SOLIDITY_PRAGMAS_VERSION",
+      "patternId": "23fc32",
+      "severity": 1,
+      "line": 3,
+      "column": 16,
+      "content": "^"
+    }
+  ]
+}
