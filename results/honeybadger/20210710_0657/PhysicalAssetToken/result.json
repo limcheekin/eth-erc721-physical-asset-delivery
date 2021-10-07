@@ -1,0 +1,8 @@
+{
+  "contract": "PhysicalAssetToken",
+  "tool": "honeybadger",
+  "start": 1633589870.4334579,
+  "end": 1633589871.2383409,
+  "duration": 0.8048830032348633,
+  "analysis": []
+}

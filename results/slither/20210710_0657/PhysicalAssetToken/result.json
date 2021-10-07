@@ -1,0 +1,8 @@
+{
+  "contract": "PhysicalAssetToken",
+  "tool": "slither",
+  "start": 1633589866.2753115,
+  "end": 1633589867.2484355,
+  "duration": 0.9731240272521973,
+  "analysis": []
+}
