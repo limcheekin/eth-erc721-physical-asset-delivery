@@ -1,0 +1,8 @@
+{
+  "contract": "IRoyaltiesProvider",
+  "tool": "solhint",
+  "start": 1633599605.4883502,
+  "end": 1633599606.4840074,
+  "duration": 0.995657205581665,
+  "analysis": []
+}
