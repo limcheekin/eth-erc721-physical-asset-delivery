@@ -1,0 +1,12 @@
+{
+  "contract": "LibRoyaltiesV2",
+  "tool": "maian",
+  "start": 1633614418.0195863,
+  "end": 1633614421.6745887,
+  "duration": 3.6550023555755615,
+  "analysis": {
+    "is_lock_vulnerable": false,
+    "is_prodigal_vulnerable": false,
+    "is_suicidal_vulnerable": false
+  }
+}

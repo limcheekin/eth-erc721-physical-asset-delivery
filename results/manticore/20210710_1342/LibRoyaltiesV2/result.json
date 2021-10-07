@@ -1,0 +1,10 @@
+{
+  "contract": "LibRoyaltiesV2",
+  "tool": "manticore",
+  "start": 1633614426.6883166,
+  "end": 1633614428.5818737,
+  "duration": 1.893557071685791,
+  "analysis": [
+    []
+  ]
+}
