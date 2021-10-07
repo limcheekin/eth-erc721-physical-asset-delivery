@@ -1,0 +1,8 @@
+{
+  "contract": "IRoyaltiesProvider",
+  "tool": "securify",
+  "start": 1633589780.0247488,
+  "end": 1633589780.9218905,
+  "duration": 0.897141695022583,
+  "analysis": null
+}

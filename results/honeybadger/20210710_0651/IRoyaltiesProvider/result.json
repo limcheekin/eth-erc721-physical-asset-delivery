@@ -1,0 +1,8 @@
+{
+  "contract": "IRoyaltiesProvider",
+  "tool": "honeybadger",
+  "start": 1633589785.0031803,
+  "end": 1633589785.7757149,
+  "duration": 0.7725346088409424,
+  "analysis": []
+}
