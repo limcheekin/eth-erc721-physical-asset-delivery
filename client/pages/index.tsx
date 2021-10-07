@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import ConnectButton from '../components/ConnectButton'
 import { useDisclosure } from '@chakra-ui/react'
 import AccountModal from '../components/AccountModal'
+import PhysicalAssetToken from '../components/PhysicalAssetToken'
 
 function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure()
@@ -36,6 +37,7 @@ function Home() {
         // Our Account modal will handle open state & closing
         }
         <AccountModal isOpen={isOpen} onClose={onClose} />
+        <PhysicalAssetToken />
       </main>
 
       <footer className={styles.footer}>
