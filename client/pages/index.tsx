@@ -6,12 +6,11 @@ import Layout from '../components/Layout'
 import ConnectButton from '../components/ConnectButton'
 import { useDisclosure } from '@chakra-ui/react'
 import AccountModal from '../components/AccountModal'
-import Greeter from '../components/Greeter'
 
 function Home() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
-  const title = 'Ethereum dApps Next.js Boiletplate'
+  const title = 'NFT(ERC721) with Physical Asset Delivery and Secondary Royalties'
   return (
     <Layout>
       <Head>
@@ -22,11 +21,11 @@ function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://github.com/limcheekin/eth-dapps-nextjs-boiletplate">{title}</a>
+          Welcome to <a href="https://github.com/limcheekin/eth-erc721-physical-asset-delivery">{title}</a>
         </h1>
 
         <p className={styles.description}>
-          A simple dApps to demo the integration of MetaMask, WalletConnect and Greeter smart contract.
+          A simple dApps to demo a NFT known as Physical Asset Token with physical item delivery and<br />secondary sales royalties (OpenSea, Rarible, Mintable).
         </p>
 
         {
@@ -37,7 +36,6 @@ function Home() {
         // Our Account modal will handle open state & closing
         }
         <AccountModal isOpen={isOpen} onClose={onClose} />
-        <Greeter />
       </main>
 
       <footer className={styles.footer}>

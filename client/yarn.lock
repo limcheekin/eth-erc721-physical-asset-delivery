@@ -186,16 +186,16 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@chakra-ui/accordion@1.3.6":
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/accordion/-/accordion-1.3.6.tgz#9ebbcec4d1871ab79bdac84187246ce1d34c8d8a"
-  integrity sha512-zZCk11FIbUgpFwwOzyhoLM9UkBhX8hIVHI/L0CSEzdVfQTra2gMf+Lw0YQVayHlO/7J6djTSzbA7nZQl50dIag==
+"@chakra-ui/accordion@1.3.7":
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/accordion/-/accordion-1.3.7.tgz#0e8a369533d614ada096fa1d6d3c7687c348458d"
+  integrity sha512-UAp69YkTGbcr9Bo5DMJVdIQGWmWgh3otba4EHXdNnnlIk+GYaULcdYJVMP0bhaX7NTyTrGY4U/mnz9nuwz+fxw==
   dependencies:
     "@chakra-ui/descendant" "2.0.1"
     "@chakra-ui/hooks" "1.6.0"
     "@chakra-ui/icon" "1.1.11"
     "@chakra-ui/react-utils" "1.1.2"
-    "@chakra-ui/transition" "1.3.4"
+    "@chakra-ui/transition" "1.3.5"
     "@chakra-ui/utils" "1.8.2"
 
 "@chakra-ui/alert@1.2.7":
@@ -207,19 +207,19 @@
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/anatomy@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-1.0.0.tgz#60598d28683bcd1effc43b7d7eb61090ea060ab7"
-  integrity sha512-UkGnjsBRbSjLWdE2Oio32/mrOTpH5N43jFsXkEG0Izups8Qjsm0jhRmkaO6F0bewh772hIu9QHxk/N45LFYQcg==
+"@chakra-ui/anatomy@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/anatomy/-/anatomy-1.0.1.tgz#62b4e372c8fc7caca0d0ee0f3b710b00220588b3"
+  integrity sha512-eMmusEHhQJn465txOdEUM2yx2A2DoRfMQWwAxoW4GwwbJTD6q8fuGEIf6jaTQ7QtDLcJ9JOkYA7C0f3SKRTGGg==
   dependencies:
-    "@chakra-ui/theme-tools" "^1.1.9"
+    "@chakra-ui/theme-tools" "^1.2.1"
 
-"@chakra-ui/avatar@1.2.9":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/avatar/-/avatar-1.2.9.tgz#22388e43b106e97f42c681a25b9feb7b94cdc258"
-  integrity sha512-zh4xC331WT86tPxDgJsIJ+tAx76pX1chBgXC+9rD7YStYqRhkjrD03o12r8eNYuoeeuTH3bWKYuqr545rS6xcQ==
+"@chakra-ui/avatar@1.2.10":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/avatar/-/avatar-1.2.10.tgz#1f2b971090e19f5e245d793dedff8eb0035594a7"
+  integrity sha512-y8JOEHVaIQus0ieNwkeCF8t0caBfQWl8FvXmYTYgDcC+ZSjDV5NR2QD+B5dwkcZJnc+EL/vX8MzX5rgZ6ToiGA==
   dependencies:
-    "@chakra-ui/image" "1.0.19"
+    "@chakra-ui/image" "1.0.20"
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/utils" "1.8.2"
 
@@ -231,19 +231,20 @@
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/button@1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/button/-/button-1.4.2.tgz#d4a2dc173aca0c4093c2a9089d4c647dec55e53a"
-  integrity sha512-Gw3W6ixkrTWaHVJRDOyvx1ZAdV/g2SjiGeHFBnfuBcZdZWqJLNy9vrS1rroBeYA953ISklyhEdtyLD9izwkzxA==
+"@chakra-ui/button@1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/button/-/button-1.4.4.tgz#88f07b7fbb7b45954251e13fba7f7f222da89437"
+  integrity sha512-bhBOPlF2KMayqBtqB8hiZjsbxd12S/p//JOQ3U8gfJwR8+TQxKz6iPCg5B1YTauHErNvwXc3y03UnHyjVqf7Yg==
   dependencies:
+    "@chakra-ui/hooks" "1.6.0"
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/spinner" "1.1.12"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/checkbox@1.5.6":
-  version "1.5.6"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/checkbox/-/checkbox-1.5.6.tgz#6e4fd3b3e83458f3b8904f4985cdfe4979257a6e"
-  integrity sha512-9hhBOLLPI4RxoNtlSxxuiBR8PeQyUCils1gtc7u5eYuSITtvvns0OjLjughDairSr12BN/gb1WKoZAly+hp/eg==
+"@chakra-ui/checkbox@1.5.7":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/checkbox/-/checkbox-1.5.7.tgz#e185cb5b44920d3820293f36cd9a4ec922990d2b"
+  integrity sha512-JrDSnAbddD52WvZcoyU9xH0tHERqF/VARIsaX4D94wJucdmItHYtx4Ik6uqh9Yxwd0VQAbPVEhMbVxP+lC/ijg==
   dependencies:
     "@chakra-ui/hooks" "1.6.0"
     "@chakra-ui/react-utils" "1.1.2"
@@ -353,10 +354,10 @@
     "@chakra-ui/icon" "1.1.11"
     "@types/react" "^17.0.0"
 
-"@chakra-ui/image@1.0.19":
-  version "1.0.19"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/image/-/image-1.0.19.tgz#c0055f8a04a62e68ae62bc5ee1b906c30b717aa5"
-  integrity sha512-nsGPyLAARveyfi6vSZeRUGxuVuon7np1IKhZ4BC8j4La35GfRw7/UvszvmbuBQdjPjw5EIzEWzCLe/SGtjIdAQ==
+"@chakra-ui/image@1.0.20":
+  version "1.0.20"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/image/-/image-1.0.20.tgz#18057ca248f17c813ad60812ac4c7965a1de1fda"
+  integrity sha512-KPJyaV843MQ6YUIjnWYWRaCNVHsWxtbjEL+wCnYSyfuADAPvNP6YEcrs5yTRYxGhJQ3sSLoAU0mIzFKKquLdrw==
   dependencies:
     "@chakra-ui/hooks" "1.6.0"
     "@chakra-ui/utils" "1.8.2"
@@ -394,30 +395,30 @@
     "@chakra-ui/react-env" "1.0.6"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/menu@1.7.3":
-  version "1.7.3"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/menu/-/menu-1.7.3.tgz#f79fb350eb6be326606b5dbfec4ab6d35e0f5ade"
-  integrity sha512-1eJwWXBeDMxTDWJKGI8YWMjkENVPwSuN6uYwCtSa2e6pEPG9fIpmMpK0ZZTljqx3OjKPHVlB3SS1uRO8VQqHMQ==
+"@chakra-ui/menu@1.7.5":
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/menu/-/menu-1.7.5.tgz#fc7bb94a267384d6645fdb4ed90c3e28e0c71fa8"
+  integrity sha512-u4dWhfVXOl+3LjjZY1MxGXEOztHOG3NxoHfOoxsRXUWokp51Lzv4YFImh8Tq8eeRQ97JfhDkRrEHiDkTmmevUQ==
   dependencies:
     "@chakra-ui/clickable" "1.1.7"
     "@chakra-ui/descendant" "2.0.1"
     "@chakra-ui/hooks" "1.6.0"
-    "@chakra-ui/popper" "2.2.1"
+    "@chakra-ui/popper" "2.3.0"
     "@chakra-ui/react-utils" "1.1.2"
-    "@chakra-ui/transition" "1.3.4"
+    "@chakra-ui/transition" "1.3.5"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/modal@1.8.11":
-  version "1.8.11"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/modal/-/modal-1.8.11.tgz#9cbc00ae6a42eedf166ad35b22114d19a564f918"
-  integrity sha512-iWVfEp5N572wapvE4YHXoapjOPfLu32dcHVCjEnsyMMcBB0aXAorfN2Cc9gtHbmQdUCvAOXYlQs9WauiLRs7tQ==
+"@chakra-ui/modal@1.9.1":
+  version "1.9.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/modal/-/modal-1.9.1.tgz#c25276f4f9288395eaf423d3f55642c5b115bebb"
+  integrity sha512-Y9TfqheNvyeuXd4Ug0q9uIeEu0DBLSJkhOHXUh3Eg8nM+3uPMWRcQxI09oZ6pD8FRRZG/NGR5IrforpsSnDP0w==
   dependencies:
     "@chakra-ui/close-button" "1.1.11"
     "@chakra-ui/focus-lock" "1.1.10"
     "@chakra-ui/hooks" "1.6.0"
     "@chakra-ui/portal" "1.2.9"
     "@chakra-ui/react-utils" "1.1.2"
-    "@chakra-ui/transition" "1.3.4"
+    "@chakra-ui/transition" "1.3.5"
     "@chakra-ui/utils" "1.8.2"
     aria-hidden "^1.1.1"
     react-remove-scroll "2.4.1"
@@ -444,21 +445,21 @@
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/popover@1.8.3":
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/popover/-/popover-1.8.3.tgz#856f1c065c5fe0c8f7a9fe72d32b72e60d0f1d7b"
-  integrity sha512-Z0anhPTC4z0PVYpjgWzqGV8Q7YP6F1N6d7jNwolJXPVdWM4bLSB6GyGguAZPEJwJ23kHDs7GQo9Tm7W8Z9DfNQ==
+"@chakra-ui/popover@1.8.4":
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/popover/-/popover-1.8.4.tgz#f69922f8e7653a73f40ece755846dd85a9ce0d0a"
+  integrity sha512-XLQTxDRuL8u5IAf311PZD6uqEuexrLuOhuAdo1lsSvx558add+BTX1/Zy16z+UVGmQGQCy0PcKT52w1O/9+K0g==
   dependencies:
     "@chakra-ui/close-button" "1.1.11"
     "@chakra-ui/hooks" "1.6.0"
-    "@chakra-ui/popper" "2.2.1"
+    "@chakra-ui/popper" "2.3.0"
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/popper@2.2.1":
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/popper/-/popper-2.2.1.tgz#51d49933ee837b396d78d9daaab1d9809afea982"
-  integrity sha512-W0hMTBp2X62UooF3qPNmsEW0IJfz72gr2DN8nsCvHQrMiARB9s2jECEss6qEsB97tnmIG8k2TNee8IzTGLmMyA==
+"@chakra-ui/popper@2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/popper/-/popper-2.3.0.tgz#df76c1b38f6345ed31fd8cac597f9990297e630a"
+  integrity sha512-K3Bw4RqttnX6TegLCBcMIez3w8YJFhUyLIkGUH0g2OCGgOajwucryFjNpuWRwkH4xcQPHghS9OVPYxRYTB22xA==
   dependencies:
     "@chakra-ui/react-utils" "1.1.2"
     "@popperjs/core" "2.4.4"
@@ -472,21 +473,23 @@
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/progress@1.1.13":
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/progress/-/progress-1.1.13.tgz#95e4b53052cd7d67a786f9c97bc870aee54815ea"
-  integrity sha512-23RLvhe4H1V3pTHPFxR1QsZnOLEatfdpMk80MsJ9yTmvjdY6yoflfiFA1cYFmXz302sPixpwticlSG0Zrpw1+Q==
+"@chakra-ui/progress@1.1.14":
+  version "1.1.14"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/progress/-/progress-1.1.14.tgz#6d065f5459e41e2a014ddf3676a98dd81bb916aa"
+  integrity sha512-eoKDk47+xKSIuiDw2omEPwpA2VbGOBsLyIZ5LgKlhs7TulhGHn5q0GkpWYp9pniZqoDjrUcpfcgv5qrVEzl7Sg==
   dependencies:
-    "@chakra-ui/theme-tools" "1.2.0"
+    "@chakra-ui/theme-tools" "1.2.1"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/provider@1.6.7":
-  version "1.6.7"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/provider/-/provider-1.6.7.tgz#df6e6aea05dd63649d5097546745156c8f7a3ef5"
-  integrity sha512-3cuZXx+AK61GVGcp5cYxwOQo6vXEGNHXHqoCcVqslT+r38rnUBp3qyNQ0NXe+QSiGNZShDBGo94d4G4/u8vgVA==
+"@chakra-ui/provider@1.6.8":
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/provider/-/provider-1.6.8.tgz#8f97771c6a53ec126d2230966dfbb29aecf1107a"
+  integrity sha512-sS9Fvypx92McA5w7yh5BUwCD7o6t+limR+3cleE56VuwYiHAOjaOBNJDGXHOWQQgAOVcwAbz1jQqPnshmszoOw==
   dependencies:
     "@chakra-ui/css-reset" "1.0.0"
     "@chakra-ui/hooks" "1.6.0"
+    "@chakra-ui/portal" "1.2.9"
+    "@chakra-ui/react-env" "1.0.6"
     "@chakra-ui/system" "1.7.3"
     "@chakra-ui/utils" "1.8.2"
 
@@ -515,17 +518,17 @@
   dependencies:
     "@chakra-ui/utils" "^1.7.0"
 
-"@chakra-ui/react@^1.6.7":
-  version "1.6.7"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-1.6.7.tgz#1d5fa2a02aa1a2c1516966e5bfc12d528452f723"
-  integrity sha512-5klvvvoPN1j3t1842Sg7qYzQu/ENXHMeccL3r34Y4xJG3SrM5ebyjyGmqGN7WqRoXzPhG25UInA9LJDEvzjbLA==
+"@chakra-ui/react@^1.6.9":
+  version "1.6.9"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-1.6.9.tgz#c13a6787c4d87db563a90ced4bc1ea68fc7d7d81"
+  integrity sha512-cucNyt0EK93YabbAnWLrb2YnHLtmvqDK2EmU0xInl2/pDj+2bl+C+7ou/J3s4tMnZY/18RVA2z77MPCGezL/Ag==
   dependencies:
-    "@chakra-ui/accordion" "1.3.6"
+    "@chakra-ui/accordion" "1.3.7"
     "@chakra-ui/alert" "1.2.7"
-    "@chakra-ui/avatar" "1.2.9"
+    "@chakra-ui/avatar" "1.2.10"
     "@chakra-ui/breadcrumb" "1.2.8"
-    "@chakra-ui/button" "1.4.2"
-    "@chakra-ui/checkbox" "1.5.6"
+    "@chakra-ui/button" "1.4.4"
+    "@chakra-ui/checkbox" "1.5.7"
     "@chakra-ui/close-button" "1.1.11"
     "@chakra-ui/control-box" "1.0.15"
     "@chakra-ui/counter" "1.1.9"
@@ -534,44 +537,44 @@
     "@chakra-ui/form-control" "1.4.1"
     "@chakra-ui/hooks" "1.6.0"
     "@chakra-ui/icon" "1.1.11"
-    "@chakra-ui/image" "1.0.19"
+    "@chakra-ui/image" "1.0.20"
     "@chakra-ui/input" "1.2.10"
     "@chakra-ui/layout" "1.4.9"
     "@chakra-ui/live-region" "1.0.14"
     "@chakra-ui/media-query" "1.1.2"
-    "@chakra-ui/menu" "1.7.3"
-    "@chakra-ui/modal" "1.8.11"
+    "@chakra-ui/menu" "1.7.5"
+    "@chakra-ui/modal" "1.9.1"
     "@chakra-ui/number-input" "1.2.10"
     "@chakra-ui/pin-input" "1.6.5"
-    "@chakra-ui/popover" "1.8.3"
-    "@chakra-ui/popper" "2.2.1"
+    "@chakra-ui/popover" "1.8.4"
+    "@chakra-ui/popper" "2.3.0"
     "@chakra-ui/portal" "1.2.9"
-    "@chakra-ui/progress" "1.1.13"
-    "@chakra-ui/provider" "1.6.7"
+    "@chakra-ui/progress" "1.1.14"
+    "@chakra-ui/provider" "1.6.8"
     "@chakra-ui/radio" "1.3.10"
     "@chakra-ui/react-env" "1.0.6"
-    "@chakra-ui/select" "1.1.14"
+    "@chakra-ui/select" "1.1.15"
     "@chakra-ui/skeleton" "1.1.18"
-    "@chakra-ui/slider" "1.2.9"
+    "@chakra-ui/slider" "1.4.0"
     "@chakra-ui/spinner" "1.1.12"
     "@chakra-ui/stat" "1.1.12"
-    "@chakra-ui/switch" "1.2.9"
+    "@chakra-ui/switch" "1.2.10"
     "@chakra-ui/system" "1.7.3"
     "@chakra-ui/table" "1.2.6"
     "@chakra-ui/tabs" "1.5.5"
     "@chakra-ui/tag" "1.1.12"
     "@chakra-ui/textarea" "1.1.14"
-    "@chakra-ui/theme" "1.10.1"
-    "@chakra-ui/toast" "1.2.11"
-    "@chakra-ui/tooltip" "1.3.10"
-    "@chakra-ui/transition" "1.3.4"
+    "@chakra-ui/theme" "1.10.3"
+    "@chakra-ui/toast" "1.3.1"
+    "@chakra-ui/tooltip" "1.3.11"
+    "@chakra-ui/transition" "1.3.5"
     "@chakra-ui/utils" "1.8.2"
     "@chakra-ui/visually-hidden" "1.0.14"
 
-"@chakra-ui/select@1.1.14":
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/select/-/select-1.1.14.tgz#e331ec0b99df4bc2ee278dcb416eb97feabe6a1d"
-  integrity sha512-yqWY6U3uFrH8fUVZFMxzoaN4AvN4Fwz94BzkauXTfFlcZn93N4GEwEvsbHbxnNDI6TfrXWrKlvfXMpgGz3y9Kw==
+"@chakra-ui/select@1.1.15":
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/select/-/select-1.1.15.tgz#6265d1859b887319b48b09060aa71c50f75e82bf"
+  integrity sha512-cODZpLBiy25AdVSVnrCOG/xGtwyiLpZBpHYW/SiwKl9lOcefuLxZkFyTp7NGJq5KTgKduYFy2h6qCZbIMf8qkg==
   dependencies:
     "@chakra-ui/form-control" "1.4.1"
     "@chakra-ui/utils" "1.8.2"
@@ -586,10 +589,10 @@
     "@chakra-ui/system" "1.7.3"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/slider@1.2.9":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/slider/-/slider-1.2.9.tgz#99a4682905e84cad077467cc291bff1d4ba15c7c"
-  integrity sha512-lZKKzFvaG686cntJayKGPRGqYmicpf7nwBrhrAdhlPkgiXXfA/ci4Xvg09DCoAClwr0bxr7ysa5weTFdZu2EJg==
+"@chakra-ui/slider@1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/slider/-/slider-1.4.0.tgz#11ac90eb5a776b423922dfc50519824e624095cf"
+  integrity sha512-Hh+27p41kyBPTQOvjIV85w2lWLm7VQgMCy9SUgq4hANJWWr1VTQNDW98f5ofoXm80GW6bAS5tOWGOGhAiTNQ+A==
   dependencies:
     "@chakra-ui/hooks" "1.6.0"
     "@chakra-ui/react-utils" "1.1.2"
@@ -620,12 +623,12 @@
     "@chakra-ui/utils" "1.8.2"
     csstype "^3.0.6"
 
-"@chakra-ui/switch@1.2.9":
-  version "1.2.9"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/switch/-/switch-1.2.9.tgz#e54e27418dbc3f8545943a21d94fe619b4de649d"
-  integrity sha512-70hU66O2bAbegWdtwdMV5jTIp9226B6z0tpze33sC+5KFzj/O9ScyV7GUGItq7KdERnw6Zs9wU5kqKuDMeFENw==
+"@chakra-ui/switch@1.2.10":
+  version "1.2.10"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/switch/-/switch-1.2.10.tgz#fa4ef3d078a29e75e1f5c7f00c03dd9a63b76ef1"
+  integrity sha512-KNxAumFC8s93h1o8Isw4vYQrnKnezJWwObCD+bY0h4gLWrjpSrnH88d8vCR6c+HhKzT0Je1XzOAeC2QAmx4kJA==
   dependencies:
-    "@chakra-ui/checkbox" "1.5.6"
+    "@chakra-ui/checkbox" "1.5.7"
     "@chakra-ui/utils" "1.8.2"
 
 "@chakra-ui/system@1.7.3":
@@ -673,53 +676,52 @@
     "@chakra-ui/form-control" "1.4.1"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/theme-tools@1.2.0", "@chakra-ui/theme-tools@^1.1.9":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-1.2.0.tgz#bad1194d38000bf92feb2e8f0e41cd664b9ee6ca"
-  integrity sha512-HCNwub3KeSzSEebpuzTKvEGzjGTPDVr6zSV036nHe6jkxkZgwrbmKH3ruxQJp5qJZh1V0DQzG0IB2fKjdWGE+g==
+"@chakra-ui/theme-tools@1.2.1", "@chakra-ui/theme-tools@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/theme-tools/-/theme-tools-1.2.1.tgz#940b169f54e1229da419fb644b215e1d41a724ae"
+  integrity sha512-e3Ql6SJyog7Rrk6DWUGyxzkzyAukodGIbH5DxTp9tLq10UhxZyGOYUQe7m/wL6XQ2zRQSIzcgvqWdTbxtkiwug==
   dependencies:
     "@chakra-ui/utils" "1.8.2"
-    "@types/tinycolor2" "1.4.2"
-    tinycolor2 "1.4.2"
+    "@ctrl/tinycolor" "^3.4.0"
 
-"@chakra-ui/theme@1.10.1":
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/theme/-/theme-1.10.1.tgz#e527f5533f0c0227b64a54e87f6ec2b5f7d6a45e"
-  integrity sha512-YvncILdCZq8Ryzcvxz3jqM2lE/QLv7IbjbohHOk0FblkJNnZDaeRuVTKITrubCS4zyfHewmSSkbAfnch2+BERw==
+"@chakra-ui/theme@1.10.3":
+  version "1.10.3"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/theme/-/theme-1.10.3.tgz#80c4e6d7ec2a0077fc378514210f129d431bfad2"
+  integrity sha512-ikaSwmf21+WGR/srmNM46K7JNeDJDKBgiCU7ER0gZ+ZV3d5szE/7ybKV+zgnOCgOY0T7w1YBs2dpcoEImK+Y5w==
   dependencies:
-    "@chakra-ui/anatomy" "1.0.0"
-    "@chakra-ui/theme-tools" "1.2.0"
+    "@chakra-ui/anatomy" "1.0.1"
+    "@chakra-ui/theme-tools" "1.2.1"
     "@chakra-ui/utils" "1.8.2"
 
-"@chakra-ui/toast@1.2.11":
-  version "1.2.11"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/toast/-/toast-1.2.11.tgz#e669fbcf98d0ae07fc456fa0de139630978a3798"
-  integrity sha512-vi8wBLcV8HH9sRYniZk2tYIsUiSP7QUS2hS8Ue1Uf7p0reOR1stoZqc39bzLpeoUpOmz2aEt2I4Y+d9YUTcR8g==
+"@chakra-ui/toast@1.3.1":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/toast/-/toast-1.3.1.tgz#f916fe95f037c60bd6c88c716d804822711cf141"
+  integrity sha512-jQw1kqaMKw3D74J2d49lur8Tvo8uaX/8XcvwSRiYcDd+GPlvVKfCdyyGusb6d6NCXOS4XqGMm0/5T/qmf2xoZA==
   dependencies:
     "@chakra-ui/alert" "1.2.7"
     "@chakra-ui/close-button" "1.1.11"
     "@chakra-ui/hooks" "1.6.0"
-    "@chakra-ui/theme" "1.10.1"
-    "@chakra-ui/transition" "1.3.4"
+    "@chakra-ui/theme" "1.10.3"
+    "@chakra-ui/transition" "1.3.5"
     "@chakra-ui/utils" "1.8.2"
     "@reach/alert" "0.13.2"
 
-"@chakra-ui/tooltip@1.3.10":
-  version "1.3.10"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/tooltip/-/tooltip-1.3.10.tgz#bf1ef4b4e82d3f6dd23b4b5ec16215c8bd6a441d"
-  integrity sha512-W4av8UViS0g1w+hG8Y61tL7SGpQfN0W/XR5YeG0A/Fgj6QrA8ZgNbuFdyECpfOBSKFYZXGWxZ4E0sXAyqdHXew==
+"@chakra-ui/tooltip@1.3.11":
+  version "1.3.11"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/tooltip/-/tooltip-1.3.11.tgz#10734fc2426ca0dd9432ab41f74da7d33791e03c"
+  integrity sha512-jbiyBK3BmTBQ2aGig4FUeeJp7sw5JaKrl1oMl67TgNc+NNLW0NhiEglYtuKQgelFd6CkJib/hy1KGn0yHKJaoA==
   dependencies:
     "@chakra-ui/hooks" "1.6.0"
-    "@chakra-ui/popper" "2.2.1"
+    "@chakra-ui/popper" "2.3.0"
     "@chakra-ui/portal" "1.2.9"
     "@chakra-ui/react-utils" "1.1.2"
     "@chakra-ui/utils" "1.8.2"
     "@chakra-ui/visually-hidden" "1.0.14"
 
-"@chakra-ui/transition@1.3.4":
-  version "1.3.4"
-  resolved "https://registry.yarnpkg.com/@chakra-ui/transition/-/transition-1.3.4.tgz#36d610e98913a371dcea0ac248ad09bf6b34535d"
-  integrity sha512-FYBJzTKEUoozoSfOGruPuv1/GBL0mZniBPh+wjHYcXbIJdp8S2gbPFlHPN+4S9NDXz+c9p+OLHZAEEv3Vcvt7A==
+"@chakra-ui/transition@1.3.5":
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/transition/-/transition-1.3.5.tgz#7bce36d60e7109939500c98f876e584b3784fef0"
+  integrity sha512-IWSlmGh+5y536deoGwiZucj/X86d+D22P7J1RTt0almblWdmsq3uC8y+qaxW+N2IC4HtRKbVO82Cr3hmOKSpMg==
   dependencies:
     "@chakra-ui/utils" "1.8.2"
 
@@ -739,6 +741,11 @@
   integrity sha512-4OoF0kDmfAVX1IS5kcJ35iOGVHXmk7EZgwH5U4kB32z/81kmG0KW/VeEFnilOknH6a5Mf3fZr8rYRVb/gLfvGg==
   dependencies:
     "@chakra-ui/utils" "1.8.2"
+
+"@ctrl/tinycolor@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@ctrl/tinycolor/-/tinycolor-3.4.0.tgz#c3c5ae543c897caa9c2a68630bed355be5f9990f"
+  integrity sha512-JZButFdZ1+/xAfpguQHoabIXkcqRRKpMrWKBkpEZZyxfY9C1DpADFB8PEqGSTeFr135SaTRfKqGKx5xSCLI7ZQ==
 
 "@emotion/babel-plugin@^11.3.0":
   version "11.3.0"
@@ -1049,15 +1056,6 @@
     "@ethersproject/rlp" "^5.4.0"
     "@ethersproject/signing-key" "^5.4.0"
 
-"@ethersproject/units@^5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@ethersproject/units/-/units-5.4.0.tgz#d57477a4498b14b88b10396062c8cbbaf20c79fe"
-  integrity sha512-Z88krX40KCp+JqPCP5oPv5p750g+uU6gopDYRTBGcDvOASh6qhiEYCRatuM/suC4S2XW9Zz90QI35MfSrTIaFg==
-  dependencies:
-    "@ethersproject/bignumber" "^5.4.0"
-    "@ethersproject/constants" "^5.4.0"
-    "@ethersproject/logger" "^5.4.0"
-
 "@ethersproject/web@^5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@ethersproject/web/-/web-5.4.0.tgz#49fac173b96992334ed36a175538ba07a7413d1f"
@@ -1324,10 +1322,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/react@^17.0.20":
-  version "17.0.20"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.20.tgz#a4284b184d47975c71658cd69e759b6bd37c3b8c"
-  integrity sha512-wWZrPlihslrPpcKyCSlmIlruakxr57/buQN1RjlIeaaTWDLtJkTtRW429MoQJergvVKc4IWBpRhWw7YNh/7GVA==
+"@types/react@^17.0.27":
+  version "17.0.27"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.27.tgz#6498ed9b3ad117e818deb5525fa1946c09f2e0e6"
+  integrity sha512-zgiJwtsggVGtr53MndV7jfiUESTqrbxOcBvwfe6KS/9bzaVPCTDieTWnFNecVNx6EAaapg5xsLLWFfHHR437AA==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"
@@ -1344,11 +1342,6 @@
   integrity sha512-Da66lEIFeIz9ltsdMZcpQvmrmmoqrfju8pm1BH8WbYjZSwUgCwXLb9C+9XYogwBITnbsSaMdVPb2ekf7TV+03w==
   dependencies:
     "@types/node" "*"
-
-"@types/tinycolor2@1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@types/tinycolor2/-/tinycolor2-1.4.2.tgz#721ca5c5d1a2988b4a886e35c2ffc5735b6afbdf"
-  integrity sha512-PeHg/AtdW6aaIO2a+98Xj7rWY4KC1E6yOy7AFknJQ7VXUGNrMlyxDFxJo7HqLtjQms/ZhhQX52mLVW/EX3JGOw==
 
 "@types/warning@^3.0.0":
   version "3.0.0"
@@ -1399,35 +1392,35 @@
     "@typescript-eslint/types" "4.29.2"
     eslint-visitor-keys "^2.0.0"
 
-"@walletconnect/browser-utils@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/browser-utils/-/browser-utils-1.6.5.tgz#01180682e90b95384e820191a1c6ad4a78729439"
-  integrity sha512-HLTysmlCkc2HN2OS6ewMG0v8E9oY2h9zNaDHe0BLN3ZxnsoMCVzkJxy7ryaXCemVdapmr6HgHFexGJoMbWaC4w==
+"@walletconnect/browser-utils@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/browser-utils/-/browser-utils-1.6.6.tgz#a985b48c99c65a986a051d66a4910010a10a0c56"
+  integrity sha512-E29xSHU7Akd4jaPehWVGx7ct+SsUzZbxcGc0fz+Pw6/j4Gh5tlfYZ9XuVixuYI4WPdQ2CmOraj8RrVOu5vba4w==
   dependencies:
     "@walletconnect/safe-json" "1.0.0"
-    "@walletconnect/types" "^1.6.5"
+    "@walletconnect/types" "^1.6.6"
     "@walletconnect/window-getters" "1.0.0"
     "@walletconnect/window-metadata" "1.0.0"
     detect-browser "5.2.0"
 
-"@walletconnect/client@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/client/-/client-1.6.5.tgz#6616ae926abc7c87c48a2d3693f2eb697858e685"
-  integrity sha512-dRq1D3NEGwM2I3CpiwFsWy1rrdMKCMSfDUu3rCCXUE4zInx+pyq7IEFjYiSjtOEZzjRlUTqYwhjnYIezQZgh4w==
+"@walletconnect/client@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/client/-/client-1.6.6.tgz#ec64575b245bfce25cc0d9150a3c2e919a8a2632"
+  integrity sha512-DDOrxagSmXCciIEr16hTf4gWZ7PG7GXribYTfOOsjtODLtPEODEEYj/AsmEALjh3ZBG4bN35Vj0F/ZA1D+90GQ==
   dependencies:
-    "@walletconnect/core" "^1.6.5"
-    "@walletconnect/iso-crypto" "^1.6.5"
-    "@walletconnect/types" "^1.6.5"
-    "@walletconnect/utils" "^1.6.5"
+    "@walletconnect/core" "^1.6.6"
+    "@walletconnect/iso-crypto" "^1.6.6"
+    "@walletconnect/types" "^1.6.6"
+    "@walletconnect/utils" "^1.6.6"
 
-"@walletconnect/core@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/core/-/core-1.6.5.tgz#acb687fc7c2d71ce2adad6a921ec1b343c4b4dd7"
-  integrity sha512-mmMTP8nZunjSCAy0ckafvt/JcdzcuSZPaAybqgKwx2rC9cc/3XWrdNsfiKMt8AFoQF87jGHem3905eFZYTqLXw==
+"@walletconnect/core@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/core/-/core-1.6.6.tgz#0a35a9b0f91da8958bec27be801a510818f4e142"
+  integrity sha512-pSftIVPY6mYz2koZPBEYmeFeAjVf2MSnRHOM6+vx+iAsUEcfMZHkgeXX6GtM6Fjza+zSZu1qnmdgURVXpmKwtQ==
   dependencies:
-    "@walletconnect/socket-transport" "^1.6.5"
-    "@walletconnect/types" "^1.6.5"
-    "@walletconnect/utils" "^1.6.5"
+    "@walletconnect/socket-transport" "^1.6.6"
+    "@walletconnect/types" "^1.6.6"
+    "@walletconnect/utils" "^1.6.6"
 
 "@walletconnect/crypto@^1.0.1":
   version "1.0.1"
@@ -1453,24 +1446,24 @@
   resolved "https://registry.yarnpkg.com/@walletconnect/environment/-/environment-1.0.0.tgz#c4545869fa9c389ec88c364e1a5f8178e8ab5034"
   integrity sha512-4BwqyWy6KpSvkocSaV7WR3BlZfrxLbJSLkg+j7Gl6pTDE+U55lLhJvQaMuDVazXYxcjBsG09k7UlH7cGiUI5vQ==
 
-"@walletconnect/http-connection@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/http-connection/-/http-connection-1.6.5.tgz#18529b7556bc09d7c794f4adc76ef0742cd500aa"
-  integrity sha512-5kr6wZ3DnqaBiwkeA9iKdawvIb3bIJNf8WA8X89YHE5KOzbkAsymjniZWs8asdl9Y9+8ZHJMPXtylyrkpT8wXA==
+"@walletconnect/http-connection@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/http-connection/-/http-connection-1.6.6.tgz#d5030bf175f24e57901e5da3acff493a3e7df556"
+  integrity sha512-V0UEnvMQPYBpD+8LAbuxN+i0dWVVfZ8XtmJymsBh2KyHLgKyHSsT5RwSCst132JGDV4/JP4HrHCs5t8KqSfEPw==
   dependencies:
-    "@walletconnect/types" "^1.6.5"
-    "@walletconnect/utils" "^1.6.5"
+    "@walletconnect/types" "^1.6.6"
+    "@walletconnect/utils" "^1.6.6"
     eventemitter3 "4.0.7"
     xhr2-cookies "1.1.0"
 
-"@walletconnect/iso-crypto@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/iso-crypto/-/iso-crypto-1.6.5.tgz#1c6471506283817e7e797c5e2e733f6c3d88f8dc"
-  integrity sha512-145VRX1+gudhHrnT2s81lLW/BEu3QgFMMRCrkxx9Tsl5JiLGcGbWkMxAl8zjGTMqnHeuQngyjvY1mO+3z27a7A==
+"@walletconnect/iso-crypto@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/iso-crypto/-/iso-crypto-1.6.6.tgz#19848bdcd54e9945961bab8a996cbca8a00d7cf1"
+  integrity sha512-wRYgKvd8K3A9FVLn2c0cDh4+9OUHkqibKtwQJTJsz+ibPGgd+n5j1/FjnzDDRGb9T1+TtlwYF3ZswKyys3diVQ==
   dependencies:
     "@walletconnect/crypto" "^1.0.1"
-    "@walletconnect/types" "^1.6.5"
-    "@walletconnect/utils" "^1.6.5"
+    "@walletconnect/types" "^1.6.6"
+    "@walletconnect/utils" "^1.6.6"
 
 "@walletconnect/jsonrpc-types@^1.0.0":
   version "1.0.0"
@@ -1492,14 +1485,14 @@
   resolved "https://registry.yarnpkg.com/@walletconnect/mobile-registry/-/mobile-registry-1.4.0.tgz#502cf8ab87330841d794819081e748ebdef7aee5"
   integrity sha512-ZtKRio4uCZ1JUF7LIdecmZt7FOLnX72RPSY7aUVu7mj7CSfxDwUn6gBuK6WGtH+NZCldBqDl5DenI5fFSvkKYw==
 
-"@walletconnect/qrcode-modal@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/qrcode-modal/-/qrcode-modal-1.6.5.tgz#58974ca8f826bd500121e85694dd342b3535cf2c"
-  integrity sha512-XII/Pm7zS5pRxrakURuhbWO+SfwgOuLuvOBk/hr1ATK/y7R5p19P62mCSUrvSxHXca27IX1tZJRe9D161R0WgQ==
+"@walletconnect/qrcode-modal@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/qrcode-modal/-/qrcode-modal-1.6.6.tgz#d95d790a4f0eaee4e8bb024b92ed111a0ee716bd"
+  integrity sha512-wZorjpOIm6OhXKNvyH1YtpxfCUVcnuJxS8YbUeKWckGjS3tDPqUTbXWPlzFdMpNBrpY3j0B2XjLgVVQ2aUDX0w==
   dependencies:
-    "@walletconnect/browser-utils" "^1.6.5"
+    "@walletconnect/browser-utils" "^1.6.6"
     "@walletconnect/mobile-registry" "^1.4.0"
-    "@walletconnect/types" "^1.6.5"
+    "@walletconnect/types" "^1.6.6"
     copy-to-clipboard "^3.3.1"
     preact "10.4.1"
     qrcode "1.4.4"
@@ -1518,43 +1511,43 @@
   resolved "https://registry.yarnpkg.com/@walletconnect/safe-json/-/safe-json-1.0.0.tgz#12eeb11d43795199c045fafde97e3c91646683b2"
   integrity sha512-QJzp/S/86sUAgWY6eh5MKYmSfZaRpIlmCJdi5uG4DJlKkZrHEF7ye7gA+VtbVzvTtpM/gRwO2plQuiooIeXjfg==
 
-"@walletconnect/socket-transport@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/socket-transport/-/socket-transport-1.6.5.tgz#f190f2d994021287fdeaf071114a5415096b2535"
-  integrity sha512-FRlgBr3EIxD3du5l/tuK6jdiva85YeRG+iZmo/RPnlVw4opy74WXb5JdCK9jXLcBEoDiY9Hz4j69aqnht6gIDQ==
+"@walletconnect/socket-transport@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/socket-transport/-/socket-transport-1.6.6.tgz#b80974fe3e2a2f93ba1f6b40df5a0ea492b94086"
+  integrity sha512-mugCEoeKTx75ogb5ROg/+LA3yGTsuRNcrYgrApceo7WNU9Z4dG8l6ycMPqrrFcODcrasq3NmXVWUYDv/CvrzSw==
   dependencies:
-    "@walletconnect/types" "^1.6.5"
-    "@walletconnect/utils" "^1.6.5"
+    "@walletconnect/types" "^1.6.6"
+    "@walletconnect/utils" "^1.6.6"
     ws "7.5.3"
 
-"@walletconnect/types@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/types/-/types-1.6.5.tgz#31ad1415fc6e1e89e25a10ad5fed6958f56cefa8"
-  integrity sha512-S9DsODI35PbIDuOSkIiF8SzTstqCqX/4+kV7n18vyukEFPlpSSHwZMwJUfzo9yJ0pqsqLNZta+jvb88gJRuAaA==
+"@walletconnect/types@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/types/-/types-1.6.6.tgz#8d644e2a390e494e40424c60272e91b4820bf0d4"
+  integrity sha512-op77cxexOmQQN36XB1sYouNTlBRV0Rup/2NYK8A1ffdwXa3a6HLHHdhBM7I/I9BVmRXoZ4+XoOnPKGGrYtlS3g==
 
-"@walletconnect/utils@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/utils/-/utils-1.6.5.tgz#6edd749cb52a363feda117121dc865d7cc6169f7"
-  integrity sha512-QB5rn/1s0PKVitAQ2/mgWbay2XfN21y3ob+5g6IhxtJRW31bbMoZw5YfO6s4ixLaZZez5LNQXstvQAclRzB7jQ==
+"@walletconnect/utils@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/utils/-/utils-1.6.6.tgz#e8e49a5f2c35e4a5f9153b09ad076655f38d8c96"
+  integrity sha512-s2X/cVXiMDSEoWV6i7HPMbP1obXlzP7KLMrBo9OMabiJKnQEh6HSZ39WLswB2PHnl8Hp1Sr4BdRvhM5kCcYWRw==
   dependencies:
-    "@walletconnect/browser-utils" "^1.6.5"
+    "@walletconnect/browser-utils" "^1.6.6"
     "@walletconnect/encoding" "^1.0.0"
     "@walletconnect/jsonrpc-utils" "^1.0.0"
-    "@walletconnect/types" "^1.6.5"
+    "@walletconnect/types" "^1.6.6"
     bn.js "4.11.8"
     js-sha3 "0.8.0"
     query-string "6.13.5"
 
-"@walletconnect/web3-provider@^1.6.5":
-  version "1.6.5"
-  resolved "https://registry.yarnpkg.com/@walletconnect/web3-provider/-/web3-provider-1.6.5.tgz#7c4ac2f89ddda1a4069d500ed29cc4396e7fdade"
-  integrity sha512-SeC7+1saHxvFn2wjt/3F0sTkDemHDNDbMkdZ3jtA7vjEw91Q0CmaYIuZk2UxyVM+tC1jL1l4yci/sgaFeAcXpQ==
+"@walletconnect/web3-provider@^1.6.6":
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/@walletconnect/web3-provider/-/web3-provider-1.6.6.tgz#7be7b6d6230d6925f8728cdddc226ef24119e602"
+  integrity sha512-8z4r9JCE0lKuZmVCPSdYnX114ckQ+oMfr9D8osRBtdyhvN9elwITMloUJfACDRelcuet94yEbXuDobQeBDDkkw==
   dependencies:
-    "@walletconnect/client" "^1.6.5"
-    "@walletconnect/http-connection" "^1.6.5"
-    "@walletconnect/qrcode-modal" "^1.6.5"
-    "@walletconnect/types" "^1.6.5"
-    "@walletconnect/utils" "^1.6.5"
+    "@walletconnect/client" "^1.6.6"
+    "@walletconnect/http-connection" "^1.6.6"
+    "@walletconnect/qrcode-modal" "^1.6.6"
+    "@walletconnect/types" "^1.6.6"
+    "@walletconnect/utils" "^1.6.6"
     web3-provider-engine "16.0.1"
 
 "@walletconnect/window-getters@1.0.0", "@walletconnect/window-getters@^1.0.0":
@@ -6880,11 +6873,6 @@ tiny-invariant@^1.0.6:
   resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.1.0.tgz#634c5f8efdc27714b7f386c35e6760991d230875"
   integrity sha512-ytxQvrb1cPc9WBEI/HSeYYoGD0kWnGEOR8RY6KomWLBVhqz0RgTwVO9dLrGz7dC+nN9llyI7OKAgRq8Vq4ZBSw==
 
-tinycolor2@1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/tinycolor2/-/tinycolor2-1.4.2.tgz#3f6a4d1071ad07676d7fa472e1fac40a719d8803"
-  integrity sha512-vJhccZPs965sV/L2sU4oRQVAos0pQXwsvTLkWYdqJ+a8Q5kPFzJTuOFwy7UniPli44NKQGAglksjvOcpo95aZA==
-
 to-arraybuffer@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/to-arraybuffer/-/to-arraybuffer-1.0.1.tgz#7d229b1fcc637e466ca081180836a7aabff83f43"
@@ -7226,86 +7214,86 @@ watchpack@2.1.1:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
 
-web3-bzz@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-bzz/-/web3-bzz-1.5.2.tgz#a04feaa19462cff6d5a8c87dad1aca4619d9dfc8"
-  integrity sha512-W/sPCdA+XQ9duUYKHAwf/g69cbbV8gTCRsa1MpZwU7spXECiyJ2EvD/QzAZ+UpJk3GELXFF/fUByeZ3VRQKF2g==
+web3-bzz@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-bzz/-/web3-bzz-1.6.0.tgz#584b51339f21eedff159abc9239b4b7ef6ded840"
+  integrity sha512-ugYV6BsinwhIi0CsLWINBz4mqN9wR9vNG0WmyEbdECjxcPyr6vkaWt4qi0zqlUxEnYAwGj4EJXNrbjPILntQTQ==
   dependencies:
     "@types/node" "^12.12.6"
     got "9.6.0"
     swarm-js "^0.1.40"
 
-web3-core-helpers@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-core-helpers/-/web3-core-helpers-1.5.2.tgz#b6bd5071ca099ba3f92dfafb552eed2b70af2795"
-  integrity sha512-U7LJoeUdQ3aY9t5gU7t/1XpcApsWm+4AcW5qKl/44ZxD44w0Dmsq1c5zJm3GuLr/a9MwQfXK4lpmvxVQWHHQRg==
+web3-core-helpers@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-core-helpers/-/web3-core-helpers-1.6.0.tgz#77e161b6ba930a4008a0df804ab379e0aa7e1e7f"
+  integrity sha512-H/IAH/0mrgvad/oxVKiAMC7qDzMrPPe/nRKmJOoIsupRg9/frvL62kZZiHhqVD1HMyyswbQFC69QRl7JqWzvxg==
   dependencies:
-    web3-eth-iban "1.5.2"
-    web3-utils "1.5.2"
+    web3-eth-iban "1.6.0"
+    web3-utils "1.6.0"
 
-web3-core-method@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-core-method/-/web3-core-method-1.5.2.tgz#d1d602657be1000a29d11e3ca3bf7bc778dea9a5"
-  integrity sha512-/mC5t9UjjJoQmJJqO5nWK41YHo+tMzFaT7Tp7jDCQsBkinE68KsUJkt0jzygpheW84Zra0DVp6q19gf96+cugg==
+web3-core-method@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-core-method/-/web3-core-method-1.6.0.tgz#ebe4ea51f5a4fa809bb68185576186359d3982e9"
+  integrity sha512-cHekyEil4mtcCOk6Q1Zh4y+2o5pTwsLIxP6Bpt4BRtZgdsyPiadYJpkLAVT/quch5xN7Qs5ZwG5AvRCS3VwD2g==
   dependencies:
     "@ethereumjs/common" "^2.4.0"
     "@ethersproject/transactions" "^5.0.0-beta.135"
-    web3-core-helpers "1.5.2"
-    web3-core-promievent "1.5.2"
-    web3-core-subscriptions "1.5.2"
-    web3-utils "1.5.2"
+    web3-core-helpers "1.6.0"
+    web3-core-promievent "1.6.0"
+    web3-core-subscriptions "1.6.0"
+    web3-utils "1.6.0"
 
-web3-core-promievent@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-core-promievent/-/web3-core-promievent-1.5.2.tgz#2dc9fe0e5bbeb7c360fc1aac5f12b32d9949a59b"
-  integrity sha512-5DacbJXe98ozSor7JlkTNCy6G8945VunRRkPxMk98rUrg60ECVEM/vuefk1atACzjQsKx6tmLZuHxbJQ64TQeQ==
+web3-core-promievent@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-core-promievent/-/web3-core-promievent-1.6.0.tgz#8b6053ae83cb47164540167fc361469fc604d2dd"
+  integrity sha512-ZzsevjMXWkhqW9dnVfTfb1OUcK7jKcKPvPIbQ4boJccNgvNZPZKlo8xB4pkAX38n4c59O5mC7Lt/z2QL/M5CeQ==
   dependencies:
     eventemitter3 "4.0.4"
 
-web3-core-requestmanager@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-core-requestmanager/-/web3-core-requestmanager-1.5.2.tgz#43ccc00779394c941b28e6e07e217350fd1ded71"
-  integrity sha512-oRVW9OrAsXN2JIZt68OEg1Mb1A9a/L3JAGMv15zLEFEnJEGw0KQsGK1ET2kvZBzvpFd5G0EVkYCnx7WDe4HSNw==
+web3-core-requestmanager@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-core-requestmanager/-/web3-core-requestmanager-1.6.0.tgz#8ef3a3b89cd08983bd94574f9c5893f70a8a6aea"
+  integrity sha512-CY5paPdiDXKTXPWaEUZekDfUXSuoE2vPxolwqzsvKwFWH5+H1NaXgrc+D5HpufgSvTXawTw0fy7IAicg8+PWqA==
   dependencies:
     util "^0.12.0"
-    web3-core-helpers "1.5.2"
-    web3-providers-http "1.5.2"
-    web3-providers-ipc "1.5.2"
-    web3-providers-ws "1.5.2"
+    web3-core-helpers "1.6.0"
+    web3-providers-http "1.6.0"
+    web3-providers-ipc "1.6.0"
+    web3-providers-ws "1.6.0"
 
-web3-core-subscriptions@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-core-subscriptions/-/web3-core-subscriptions-1.5.2.tgz#8eaebde44f81fc13c45b555c4422fe79393da9cf"
-  integrity sha512-hapI4rKFk22yurtIv0BYvkraHsM7epA4iI8Np+HuH6P9DD0zj/llaps6TXLM9HyacLBRwmOLZmr+pHBsPopUnQ==
+web3-core-subscriptions@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-core-subscriptions/-/web3-core-subscriptions-1.6.0.tgz#8c23b15b434a7c9f937652ecca45d7108e2c54df"
+  integrity sha512-kY9WZUY/m1URSOv3uTLshoZD9ZDiFKReIzHuPUkxFpD5oYNmr1/aPQNPCrrMxKODR7UVX/D90FxWwCYqHhLaxQ==
   dependencies:
     eventemitter3 "4.0.4"
-    web3-core-helpers "1.5.2"
+    web3-core-helpers "1.6.0"
 
-web3-core@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-core/-/web3-core-1.5.2.tgz#ca2b9b1ed3cf84d48b31c9bb91f7628f97cfdcd5"
-  integrity sha512-sebMpQbg3kbh3vHUbHrlKGKOxDWqjgt8KatmTBsTAWj/HwWYVDzeX+2Q84+swNYsm2DrTBVFlqTErFUwPBvyaA==
+web3-core@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-core/-/web3-core-1.6.0.tgz#144eb00f651c9812faf7176abd7ee99d5f45e212"
+  integrity sha512-o0WsLrJ2yD+HAAc29lGMWJef/MutTyuzpJC0UzLJtIAQJqtpDalzWINEu4j8XYXGk34N/V6vudtzRPo23QEE6g==
   dependencies:
     "@types/bn.js" "^4.11.5"
     "@types/node" "^12.12.6"
     bignumber.js "^9.0.0"
-    web3-core-helpers "1.5.2"
-    web3-core-method "1.5.2"
-    web3-core-requestmanager "1.5.2"
-    web3-utils "1.5.2"
+    web3-core-helpers "1.6.0"
+    web3-core-method "1.6.0"
+    web3-core-requestmanager "1.6.0"
+    web3-utils "1.6.0"
 
-web3-eth-abi@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-eth-abi/-/web3-eth-abi-1.5.2.tgz#b627eada967f39ae4657ddd61b693cb00d55cb29"
-  integrity sha512-P3bJbDR5wib4kWGfVeBKBVi27T+AiHy4EJxYM6SMNbpm3DboLDdisu9YBd6INMs8rzxgnprBbGmmyn4jKIDKAA==
+web3-eth-abi@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-eth-abi/-/web3-eth-abi-1.6.0.tgz#4225608f61ebb0607d80849bb2b20f910780253d"
+  integrity sha512-fImomGE9McuTMJLwK8Tp0lTUzXqCkWeMm00qPVIwpJ/h7lCw9UFYV9+4m29wSqW6FF+FIZKwc6UBEf9dlx3orA==
   dependencies:
     "@ethersproject/abi" "5.0.7"
-    web3-utils "1.5.2"
+    web3-utils "1.6.0"
 
-web3-eth-accounts@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-eth-accounts/-/web3-eth-accounts-1.5.2.tgz#cf506c21037fa497fe42f1f055980ce4acf83731"
-  integrity sha512-F8mtzxgEhxfLc66vPi0Gqd6mpscvvk7Ua575bsJ1p9J2X/VtuKgDgpWcU4e4LKeROQ+ouCpAG9//0j9jQuij3A==
+web3-eth-accounts@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-eth-accounts/-/web3-eth-accounts-1.6.0.tgz#530927f4c5b78df93b3ea1203abbb467de29cd04"
+  integrity sha512-2f6HS4KIH4laAsNCOfbNX3dRiQosqSY2TRK86C8jtAA/QKGdx+5qlPfYzbI2RjG81iayb2+mVbHIaEaBGZ8sGw==
   dependencies:
     "@ethereumjs/common" "^2.3.0"
     "@ethereumjs/tx" "^3.2.1"
@@ -7314,85 +7302,85 @@ web3-eth-accounts@1.5.2:
     ethereumjs-util "^7.0.10"
     scrypt-js "^3.0.1"
     uuid "3.3.2"
-    web3-core "1.5.2"
-    web3-core-helpers "1.5.2"
-    web3-core-method "1.5.2"
-    web3-utils "1.5.2"
+    web3-core "1.6.0"
+    web3-core-helpers "1.6.0"
+    web3-core-method "1.6.0"
+    web3-utils "1.6.0"
 
-web3-eth-contract@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-eth-contract/-/web3-eth-contract-1.5.2.tgz#ffbd799fd01e36596aaadefba323e24a98a23c2f"
-  integrity sha512-4B8X/IPFxZCTmtENpdWXtyw5fskf2muyc3Jm5brBQRb4H3lVh1/ZyQy7vOIkdphyaXu4m8hBLHzeyKkd37mOUg==
+web3-eth-contract@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-eth-contract/-/web3-eth-contract-1.6.0.tgz#deb946867ad86d32bcbba899d733b681b25ea674"
+  integrity sha512-ZUtO77zFnxuFtrc+D+iJ3AzNgFXAVcKnhEYN7f1PNz/mFjbtE6dJ+ujO0mvMbxIZF02t9IZv0CIXRpK0rDvZAw==
   dependencies:
     "@types/bn.js" "^4.11.5"
-    web3-core "1.5.2"
-    web3-core-helpers "1.5.2"
-    web3-core-method "1.5.2"
-    web3-core-promievent "1.5.2"
-    web3-core-subscriptions "1.5.2"
-    web3-eth-abi "1.5.2"
-    web3-utils "1.5.2"
+    web3-core "1.6.0"
+    web3-core-helpers "1.6.0"
+    web3-core-method "1.6.0"
+    web3-core-promievent "1.6.0"
+    web3-core-subscriptions "1.6.0"
+    web3-eth-abi "1.6.0"
+    web3-utils "1.6.0"
 
-web3-eth-ens@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-eth-ens/-/web3-eth-ens-1.5.2.tgz#ecb3708f0e8e2e847e9d89e8428da12c30bba6a4"
-  integrity sha512-/UrLL42ZOCYge+BpFBdzG8ICugaRS4f6X7PxJKO+zAt+TwNgBpjuWfW/ZYNcuqJun/ZyfcTuj03TXqA1RlNhZQ==
+web3-eth-ens@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-eth-ens/-/web3-eth-ens-1.6.0.tgz#af13852168d56fa71b9198eb097e96fb93831c2a"
+  integrity sha512-AG24PNv9qbYHSpjHcU2pViOII0jvIR7TeojJ2bxXSDqfcgHuRp3NZGKv6xFvT4uNI4LEQHUhSC7bzHoNF5t8CA==
   dependencies:
     content-hash "^2.5.2"
     eth-ens-namehash "2.0.8"
-    web3-core "1.5.2"
-    web3-core-helpers "1.5.2"
-    web3-core-promievent "1.5.2"
-    web3-eth-abi "1.5.2"
-    web3-eth-contract "1.5.2"
-    web3-utils "1.5.2"
+    web3-core "1.6.0"
+    web3-core-helpers "1.6.0"
+    web3-core-promievent "1.6.0"
+    web3-eth-abi "1.6.0"
+    web3-eth-contract "1.6.0"
+    web3-utils "1.6.0"
 
-web3-eth-iban@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-eth-iban/-/web3-eth-iban-1.5.2.tgz#f390ad244ef8a6c94de7c58736b0b80a484abc8e"
-  integrity sha512-C04YDXuSG/aDwOHSX+HySBGb0KraiAVt+/l1Mw7y/fCUrKC/K0yYzMYqY/uYOcvLtepBPsC4ZfUYWUBZ2PO8Vg==
+web3-eth-iban@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-eth-iban/-/web3-eth-iban-1.6.0.tgz#edbe46cedc5b148d53fa455edea6b4eef53b2be7"
+  integrity sha512-HM/bKBS/e8qg0+Eh7B8C/JVG+GkR4AJty17DKRuwMtrh78YsonPj7GKt99zS4n5sDLFww1Imu/ZIk3+K5uJCjw==
   dependencies:
     bn.js "^4.11.9"
-    web3-utils "1.5.2"
+    web3-utils "1.6.0"
 
-web3-eth-personal@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-eth-personal/-/web3-eth-personal-1.5.2.tgz#043335a19ab59e119ba61e3bd6c3b8cde8120490"
-  integrity sha512-nH5N2GiVC0C5XeMEKU16PeFP3Hb3hkPvlR6Tf9WQ+pE+jw1c8eaXBO1CJQLr15ikhUF3s94ICyHcfjzkDsmRbA==
+web3-eth-personal@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-eth-personal/-/web3-eth-personal-1.6.0.tgz#b75a61c0737b8b8bcc11d05db2ed7bfce7e4b262"
+  integrity sha512-8ohf4qAwbShf4RwES2tLHVqa+pHZnS5Q6tV80sU//bivmlZeyO1W4UWyNn59vu9KPpEYvLseOOC6Muxuvr8mFQ==
   dependencies:
     "@types/node" "^12.12.6"
-    web3-core "1.5.2"
-    web3-core-helpers "1.5.2"
-    web3-core-method "1.5.2"
-    web3-net "1.5.2"
-    web3-utils "1.5.2"
+    web3-core "1.6.0"
+    web3-core-helpers "1.6.0"
+    web3-core-method "1.6.0"
+    web3-net "1.6.0"
+    web3-utils "1.6.0"
 
-web3-eth@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-eth/-/web3-eth-1.5.2.tgz#0f6470df60a2a7d04df4423ca7721db8ed5ad72b"
-  integrity sha512-DwWQ6TCOUqvYyo7T20S7HpQDPveNHNqOn2Q2F3E8ZFyEjmqT4XsGiwvm08kB/VgQ4e/ANyq/i8PPFSYMT8JKHg==
+web3-eth@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-eth/-/web3-eth-1.6.0.tgz#4c9d5fb4eccf9f8744828281757e6ea76af58cbd"
+  integrity sha512-qJMvai//r0be6I9ghU24/152f0zgJfYC23TMszN3Y6jse1JtjCBP2TlTibFcvkUN1RRdIUY5giqO7ZqAYAmp7w==
   dependencies:
-    web3-core "1.5.2"
-    web3-core-helpers "1.5.2"
-    web3-core-method "1.5.2"
-    web3-core-subscriptions "1.5.2"
-    web3-eth-abi "1.5.2"
-    web3-eth-accounts "1.5.2"
-    web3-eth-contract "1.5.2"
-    web3-eth-ens "1.5.2"
-    web3-eth-iban "1.5.2"
-    web3-eth-personal "1.5.2"
-    web3-net "1.5.2"
-    web3-utils "1.5.2"
+    web3-core "1.6.0"
+    web3-core-helpers "1.6.0"
+    web3-core-method "1.6.0"
+    web3-core-subscriptions "1.6.0"
+    web3-eth-abi "1.6.0"
+    web3-eth-accounts "1.6.0"
+    web3-eth-contract "1.6.0"
+    web3-eth-ens "1.6.0"
+    web3-eth-iban "1.6.0"
+    web3-eth-personal "1.6.0"
+    web3-net "1.6.0"
+    web3-utils "1.6.0"
 
-web3-net@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-net/-/web3-net-1.5.2.tgz#58915d7e2dad025d2a08f02c865f3abe61c48eff"
-  integrity sha512-VEc9c+jfoERhbJIxnx0VPlQDot8Lm4JW/tOWFU+ekHgIiu2zFKj5YxhURIth7RAbsaRsqCb79aE+M0eI8maxVQ==
+web3-net@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-net/-/web3-net-1.6.0.tgz#2c28f8787073110a7c2310336889d2dad647e500"
+  integrity sha512-LFfG95ovTT2sNHkO1TEfsaKpYcxOSUtbuwHQ0K3G0e5nevKDJkPEFIqIcob40yiwcWoqEjENJP9Bjk8CRrZ99Q==
   dependencies:
-    web3-core "1.5.2"
-    web3-core-method "1.5.2"
-    web3-utils "1.5.2"
+    web3-core "1.6.0"
+    web3-core-method "1.6.0"
+    web3-utils "1.6.0"
 
 web3-provider-engine@16.0.1:
   version "16.0.1"
@@ -7422,66 +7410,66 @@ web3-provider-engine@16.0.1:
     xhr "^2.2.0"
     xtend "^4.0.1"
 
-web3-providers-http@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-providers-http/-/web3-providers-http-1.5.2.tgz#94f95fe5572ca54aa2c2ffd42c63956436c9eb0a"
-  integrity sha512-dUNFJc9IMYDLZnkoQX3H4ZjvHjGO6VRVCqrBrdh84wPX/0da9dOA7DwIWnG0Gv3n9ybWwu5JHQxK4MNQ444lyA==
+web3-providers-http@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-providers-http/-/web3-providers-http-1.6.0.tgz#8db4e589abf7197f5d65b12af1bf9726c45f4160"
+  integrity sha512-sNxHFNv3lnxpmULt34AS6M36IYB/Hzm2Et4yPNzdP1XE644D8sQBZQZaJQdTaza5HfrlwoqU6AOK935armqGuA==
   dependencies:
-    web3-core-helpers "1.5.2"
+    web3-core-helpers "1.6.0"
     xhr2-cookies "1.1.0"
 
-web3-providers-ipc@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-providers-ipc/-/web3-providers-ipc-1.5.2.tgz#68a516883c998eeddf60df4cead77baca4fb4aaa"
-  integrity sha512-SJC4Sivt4g9LHKlRy7cs1jkJgp7bjrQeUndE6BKs0zNALKguxu6QYnzbmuHCTFW85GfMDjhvi24jyyZHMnBNXQ==
+web3-providers-ipc@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-providers-ipc/-/web3-providers-ipc-1.6.0.tgz#6a3410fd47a67c4a36719fb97f99534ae12aac98"
+  integrity sha512-ETYdfhpGiGoWpmmSJnONvnPfd3TPivHEGjXyuX+L5FUsbMOVZj9MFLNIS19Cx/YGL8UWJ/8alLJoTcWSIdz/aA==
   dependencies:
     oboe "2.1.5"
-    web3-core-helpers "1.5.2"
+    web3-core-helpers "1.6.0"
 
-web3-providers-ws@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-providers-ws/-/web3-providers-ws-1.5.2.tgz#d336a93ed608b40cdcadfadd1f1bc8d32ea046e0"
-  integrity sha512-xy9RGlyO8MbJDuKv2vAMDkg+en+OvXG0CGTCM2BTl6l1vIdHpCa+6A/9KV2rK8aU9OBZ7/Pf+Y19517kHVl9RA==
+web3-providers-ws@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-providers-ws/-/web3-providers-ws-1.6.0.tgz#dc15dc18c30089efda992015fd5254bd2b77af5f"
+  integrity sha512-eNRmlhOPCpuVYwBrKBBQRLGPFb4U1Uo44r9EWV69Cpo4gP6XeBTl6nkawhLz6DS0fq79apyPfItJVuSfAy77pA==
   dependencies:
     eventemitter3 "4.0.4"
-    web3-core-helpers "1.5.2"
+    web3-core-helpers "1.6.0"
     websocket "^1.0.32"
 
-web3-shh@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-shh/-/web3-shh-1.5.2.tgz#a72a3d903c0708a004db94a72d934a302d880aea"
-  integrity sha512-wOxOcYt4Sa0AHAI8gG7RulCwVuVjSRS/M/AbFsea3XfJdN6sU13/syY7OdZNjNYuKjYTzxKYrd3dU/K2iqffVw==
+web3-shh@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-shh/-/web3-shh-1.6.0.tgz#838a3435dce1039f669a48e53e948062de197931"
+  integrity sha512-ymN0OFL81WtEeSyb+PFpuUv39fR3frGwsZnIg5EVPZvrOIdaDSFcGSLDmafUt0vKSubvLMVYIBOCskRD6YdtEQ==
   dependencies:
-    web3-core "1.5.2"
-    web3-core-method "1.5.2"
-    web3-core-subscriptions "1.5.2"
-    web3-net "1.5.2"
+    web3-core "1.6.0"
+    web3-core-method "1.6.0"
+    web3-core-subscriptions "1.6.0"
+    web3-net "1.6.0"
 
-web3-utils@1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3-utils/-/web3-utils-1.5.2.tgz#150982dcb1918ffc54eba87528e28f009ebc03aa"
-  integrity sha512-quTtTeQJHYSxAwIBOCGEcQtqdVcFWX6mCFNoqnp+mRbq+Hxbs8CGgO/6oqfBx4OvxIOfCpgJWYVHswRXnbEu9Q==
+web3-utils@1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3-utils/-/web3-utils-1.6.0.tgz#1975c5ee5b7db8a0836eb7004848a7cd962d1ddc"
+  integrity sha512-bgCAWAeQnJF035YTFxrcHJ5mGEfTi/McsjqldZiXRwlHK7L1PyOqvXiQLE053dlzvy1kdAxWl/sSSfLMyNUAXg==
   dependencies:
     bn.js "^4.11.9"
-    eth-lib "0.2.8"
     ethereum-bloom-filters "^1.0.6"
+    ethereumjs-util "^7.1.0"
     ethjs-unit "0.1.6"
     number-to-bn "1.7.0"
     randombytes "^2.1.0"
     utf8 "3.0.0"
 
-web3@^1.5.2:
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/web3/-/web3-1.5.2.tgz#736ca2f39048c63964203dd811f519400973e78d"
-  integrity sha512-aapKLdO8t7Cos6tZLeeQUtCJvTiPMlLcHsHHDLSBZ/VaJEucSTxzun32M8sp3BmF4waDEmhY+iyUM1BKvtAcVQ==
+web3@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/web3/-/web3-1.6.0.tgz#d8fa0cd9e7bf252f9fe43bb77dc42bc6671affde"
+  integrity sha512-rWpXnO88MiVX5yTRqMBCVKASxc7QDkXZZUl1D48sKlbX4dt3BAV+nVMVUKCBKiluZ5Bp8pDrVCUdPx/jIYai5Q==
   dependencies:
-    web3-bzz "1.5.2"
-    web3-core "1.5.2"
-    web3-eth "1.5.2"
-    web3-eth-personal "1.5.2"
-    web3-net "1.5.2"
-    web3-shh "1.5.2"
-    web3-utils "1.5.2"
+    web3-bzz "1.6.0"
+    web3-core "1.6.0"
+    web3-eth "1.6.0"
+    web3-eth-personal "1.6.0"
+    web3-net "1.6.0"
+    web3-shh "1.6.0"
+    web3-utils "1.6.0"
 
 webidl-conversions@^4.0.2:
   version "4.0.2"
