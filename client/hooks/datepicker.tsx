@@ -13,7 +13,6 @@ import {
   PopoverTrigger,
   Text,
   useMultiStyleConfig,
-  StylesProvider,
 } from "@chakra-ui/react";
 import {
   addDays,

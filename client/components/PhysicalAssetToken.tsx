@@ -49,7 +49,7 @@ export default function PhysicalAssetToken() {
         <Grid mt="5" templateColumns="repeat(2, 1fr)" templateRows="repeat(7, 1fr)" gap={3}>
           <GridItem><Text textAlign="right" fontWeight="bold">NFT Holder Address</Text></GridItem>
           <GridItem>{addressInput}</GridItem>
-          <GridItem><Text textAlign="right" fontWeight="bold">Lock From (Date)</Text></GridItem>
+          <GridItem><Text textAlign="right" fontWeight="bold">Lock From</Text></GridItem>
           <GridItem>{lockFromDateInput}</GridItem>
           <GridItem><Text textAlign="right" fontWeight="bold">Unlock Password</Text></GridItem>
           <GridItem>{unlockPasswordInput}</GridItem>
