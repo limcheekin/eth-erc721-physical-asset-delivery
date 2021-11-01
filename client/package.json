@@ -9,28 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.0.15",
-    "@chakra-ui/react": "^1.6.9",
-    "@emotion/react": "^11.4.1",
+    "@chakra-ui/icons": "^1.0.16",
+    "@chakra-ui/react": "^1.6.10",
+    "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
     "@metamask/detect-provider": "^1.2.0",
     "@metamask/jazzicon": "^2.0.0",
     "@walletconnect/web3-provider": "^1.6.6",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^5.0.0",
     "lodash": "^4.17.21",
-    "next": "11.1.2",
+    "next": "12.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hook-form": "^7.18.0",
     "react-icons": "^4.3.1",
     "react-spinners": "^0.11.0",
-    "sharp": "^0.29.1",
+    "sharp": "^0.29.2",
     "use-lilius": "^2.0.0",
     "web3": "^1.6.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.27",
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2",
-    "typescript": "^4.4.3"
+    "@types/react": "^17.0.33",
+    "eslint": "8.1.0",
+    "eslint-config-next": "12.0.2",
+    "typescript": "^4.4.4"
   }
 }
