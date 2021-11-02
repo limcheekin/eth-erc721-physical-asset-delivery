@@ -1,0 +1,17 @@
+{
+  "contract": "AbstractRoyalties",
+  "tool": "solhint",
+  "start": 1635843718.4777179,
+  "end": 1635843719.7621448,
+  "duration": 1.2844269275665283,
+  "analysis": [
+    {
+      "file": "/data/AbstractRoyalties.sol",
+      "line": "7",
+      "column": "10",
+      "message": "Expected indentation of 0 spaces but found 9",
+      "level": "Error",
+      "type": "indent"
+    }
+  ]
+}
