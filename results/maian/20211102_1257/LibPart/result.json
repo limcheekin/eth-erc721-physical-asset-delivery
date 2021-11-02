@@ -1,0 +1,12 @@
+{
+  "contract": "LibPart",
+  "tool": "maian",
+  "start": 1635857925.1269498,
+  "end": 1635857947.9405878,
+  "duration": 22.81363797187805,
+  "analysis": {
+    "is_lock_vulnerable": false,
+    "is_prodigal_vulnerable": false,
+    "is_suicidal_vulnerable": false
+  }
+}
