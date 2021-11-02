@@ -5,7 +5,7 @@ import { AbiItem } from 'web3-utils'
 import { useButton, useInput, usePasswordInput } from '../hooks/ui'
 import { useSingleSelect } from '../hooks/datepicker'
 import PhysicalAssetTokenContract from '../contracts/PhysicalAssetToken.json'
-
+import ImageUpload from './ImageUpload'
 
 // REF: https://dev.to/jacobedawson/send-react-web3-dapp-transactions-via-metamask-2b8n
 export default function PhysicalAssetToken() {
@@ -14,12 +14,12 @@ export default function PhysicalAssetToken() {
   const [createOutput, setCreateOutput] = useState("")
   const [unlockOutput, setUnlockOutput] = useState("")
   const [createButtonLoading, createButton] = useButton(createToken, 'Create')
-  const [address, addressInput] = useInput(createButtonLoading as boolean)
-  const [lockFromDate, lockFromDateInput] = useSingleSelect(createButtonLoading as boolean)
-  const [unlockPassword, unlockPasswordInput] = usePasswordInput(createButtonLoading as boolean)
+  const [tokenUrl, tokenUrlInput] = useInput(createButtonLoading as boolean, 'Token URL')
+  const [address, addressInput] = useInput(createButtonLoading as boolean, 'NFT Holder Address')
+  const [lockFromDate, lockFromDateInput] = useSingleSelect(createButtonLoading as boolean, 'Lock From Date')
+  const [unlockPassword, unlockPasswordInput] = usePasswordInput(createButtonLoading as boolean, 'Unlock Password')
   const [unlockButtonLoading, unlockButton] = useButton(unlockToken, 'Unlock')
   const [unlock, unlockInput] = usePasswordInput(unlockButtonLoading as boolean)
-  
   const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
   const abiItems: AbiItem[] = web3 && JSON.parse(JSON.stringify(PhysicalAssetTokenContract.abi))
   const contract = web3 && contractAddress && new web3.eth.Contract(abiItems, contractAddress)
@@ -46,14 +46,15 @@ export default function PhysicalAssetToken() {
     <div>
       { 
         account && (
-        <Grid mt="5" templateColumns="repeat(2, 1fr)" templateRows="repeat(7, 1fr)" gap={3}>
-          <GridItem><Text textAlign="right" fontWeight="bold">NFT Holder Address</Text></GridItem>
+        <Grid mt="5" templateColumns="repeat(2, 1fr)" templateRows="repeat(3, 1fr)" gap={3}>
+          <GridItem align="center" rowSpan={4}>
+            <ImageUpload />
+          </GridItem>
+          <GridItem>{tokenUrlInput}</GridItem>
           <GridItem>{addressInput}</GridItem>
-          <GridItem><Text textAlign="right" fontWeight="bold">Lock From</Text></GridItem>
           <GridItem>{lockFromDateInput}</GridItem>
-          <GridItem><Text textAlign="right" fontWeight="bold">Unlock Password</Text></GridItem>
           <GridItem>{unlockPasswordInput}</GridItem>
-          <GridItem  colSpan={2}>{createButton}</GridItem>
+          <GridItem colSpan={2}>{createButton}</GridItem>
           <GridItem colSpan={2}>
             <Text fontWeight="bold" textAlign="center">{createOutput}</Text>
           </GridItem>

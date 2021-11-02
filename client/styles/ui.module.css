@@ -1,0 +1,17 @@
+.imagePreviewForm img,
+.addImageButton {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.addImageButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: none;
+  background: #fef289;
+  color: #000;
+}

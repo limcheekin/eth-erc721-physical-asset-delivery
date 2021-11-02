@@ -34,7 +34,7 @@ import { IoCalendarClearSharp, IoChevronBackSharp, IoChevronForwardSharp } from 
 
 import { useLilius } from 'use-lilius';
 
-export function useSingleSelect(isReadOnly: boolean) {
+export function useSingleSelect(isReadOnly: boolean, placeholder: string = 'Select Date') {
   const {
     calendar,
     clearSelected,
@@ -133,7 +133,7 @@ export function useSingleSelect(isReadOnly: boolean) {
             <Input
               onBlur={() => onInputBlur()}
               onChange={(e) => onInputChange(e.target.value)}
-              placeholder="Select a Date"
+              placeholder={placeholder}
               value={inputValue}
               isReadOnly={isReadOnly}
             />
