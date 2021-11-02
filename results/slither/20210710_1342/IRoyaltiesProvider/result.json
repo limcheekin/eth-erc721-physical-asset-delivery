@@ -1,8 +1,0 @@
-{
-  "contract": "IRoyaltiesProvider",
-  "tool": "slither",
-  "start": 1633614456.9913423,
-  "end": 1633614458.0659316,
-  "duration": 1.0745892524719238,
-  "analysis": []
-}
