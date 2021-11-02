@@ -1,4 +1,4 @@
-import { Text, Grid, GridItem, extendTheme } from "@chakra-ui/react"
+import { Text, Grid, GridItem, Input, extendTheme } from "@chakra-ui/react"
 import { useState, useContext, useEffect } from "react"
 import { globalContext } from '../store'
 import { AbiItem } from 'web3-utils'
@@ -10,7 +10,7 @@ import ImageUpload from './ImageUpload'
 // REF: https://dev.to/jacobedawson/send-react-web3-dapp-transactions-via-metamask-2b8n
 export default function PhysicalAssetToken() {
   const { globalState, dispatch } = useContext(globalContext)
-  const { account, web3 } = globalState
+  const { account, web3, metadata } = globalState
   const [createOutput, setCreateOutput] = useState("")
   const [unlockOutput, setUnlockOutput] = useState("")
   const [createButtonLoading, createButton] = useButton(createToken, 'Create')
@@ -50,7 +50,10 @@ export default function PhysicalAssetToken() {
           <GridItem align="center" rowSpan={4}>
             <ImageUpload />
           </GridItem>
-          <GridItem>{tokenUrlInput}</GridItem>
+          <GridItem>
+            {metadata == null ? tokenUrlInput : 
+            <Input isReadOnly={true} value={ metadata.url } />}
+          </GridItem>
           <GridItem>{addressInput}</GridItem>
           <GridItem>{lockFromDateInput}</GridItem>
           <GridItem>{unlockPasswordInput}</GridItem>

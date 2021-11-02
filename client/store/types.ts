@@ -5,6 +5,7 @@ export interface GlobalStateInterface {
     provider: any
     web3: Web3
     account: string
+    metadata: any
 }
 
 export type ActionType = {

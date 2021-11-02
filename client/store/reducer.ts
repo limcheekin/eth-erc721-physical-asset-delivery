@@ -18,6 +18,11 @@ const Reducer = (state: GlobalStateInterface, action: ActionType): any => {
                 ...state,
                 web3: action.payload,
             };
+        case 'SET_METADATA':
+            return {
+                ...state,
+                metadata: action.payload,
+            };    
         case 'CLEAR_STATE':
             return initialState;
         default:

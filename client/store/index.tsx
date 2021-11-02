@@ -22,4 +22,5 @@ export const initialState: GlobalStateInterface = {
   provider: null,
   web3: null,
   account: '',
+  metadata: null,
 };
