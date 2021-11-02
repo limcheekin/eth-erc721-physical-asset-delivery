@@ -1,14 +1,14 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "./@rarible/royalties/contracts/impl/RoyaltiesV2Impl.sol";
 import "./@rarible/royalties/contracts/LibPart.sol";
 import "./@rarible/royalties/contracts/LibRoyaltiesV2.sol";
 
-contract PhysicalAssetToken is ERC721, Ownable, RoyaltiesV2Impl {
+contract PhysicalAssetToken is ERC721URIStorage, Ownable, RoyaltiesV2Impl {
     bytes4 private constant _INTERFACE_ID_ERC2981 = 0x2a55205a;
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
@@ -52,28 +52,17 @@ contract PhysicalAssetToken is ERC721, Ownable, RoyaltiesV2Impl {
      */
     function mint(
         address to,
+        string memory metadataURI,
         uint256 lockedFromTimestamp,
         bytes32 unlockHash
     ) public onlyOwner {
-        tokenLockedFromTimestamp[_tokenIds.current()] = lockedFromTimestamp;
-        tokenUnlockCodeHashes[_tokenIds.current()] = unlockHash;
-        super._mint(to, _tokenIds.current());
+        uint256 id = _tokenIds.current();
+        tokenLockedFromTimestamp[id] = lockedFromTimestamp;
+        tokenUnlockCodeHashes[id] = unlockHash;
+        super._mint(to, id);
+        super._setTokenURI(id, metadataURI);
+
         _tokenIds.increment();
-    }
-
-    function tokenURI(uint256 tokenId)
-        public
-        view
-        virtual
-        override
-        returns (string memory)
-    {
-        return string(abi.encodePacked(super.tokenURI(tokenId), ".json"));
-    }
-
-    function _baseURI() internal view virtual override returns (string memory) {
-        return
-            "https://eth-erc721-physical-asset-delivery.vercel.app/metadata/";
     }
 
     function setRoyalties(

@@ -3,6 +3,7 @@ const truffleAssert = require('truffle-assertions');
 
 let correctUnlockCode = web3.utils.sha3('test'); //test is the password
 const LOCK_IN_SECONDS = 10; //lock it in 10 seconds to test unlock
+const TOKEN_URI = 'ipfs://xyz/metadata.json';
 let timestampLockedFrom = Math.round(Date.now() / 1000) + LOCK_IN_SECONDS;
 let unlockCodeHash = web3.utils.sha3(correctUnlockCode); //double hashed
 
@@ -14,7 +15,7 @@ contract('PhysicalAssetToken: mint, lock and royalties', (accounts) => {
     })
 
     it('is possible to mint tokens', async () => {
-        await this.token.mint(tokenHolderOneAddress, timestampLockedFrom, unlockCodeHash); //minting works
+        await this.token.mint(tokenHolderOneAddress, TOKEN_URI, timestampLockedFrom, unlockCodeHash); //minting works
         await truffleAssert.fails(this.token.transferFrom(deployerAddress, tokenHolderOneAddress, 0)); //transferring for others doesn't work
 
         //but transferring in general works
@@ -63,7 +64,7 @@ contract('PhysicalAssetToken: mint, lock and royalties', (accounts) => {
 
     it('is possible to retrieve the correct token URI', async () => {
         let metadata = await this.token.tokenURI(0);
-        assert.equal('https://eth-erc721-physical-asset-delivery.vercel.app/metadata/0.json', metadata);
+        assert.equal(TOKEN_URI, metadata);
     });
 
     it('is possible to set royalties', async () => {
