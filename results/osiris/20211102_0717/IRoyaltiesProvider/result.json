@@ -1,0 +1,8 @@
+{
+  "contract": "IRoyaltiesProvider",
+  "tool": "osiris",
+  "start": 1635837729.642375,
+  "end": 1635837730.4971507,
+  "duration": 0.8547756671905518,
+  "analysis": []
+}
