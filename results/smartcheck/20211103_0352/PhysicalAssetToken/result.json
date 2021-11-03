@@ -1,0 +1,129 @@
+{
+  "contract": "PhysicalAssetToken",
+  "tool": "smartcheck",
+  "start": 1635911559.4074655,
+  "end": 1635911564.759403,
+  "duration": 5.351937532424927,
+  "analysis": [
+    {
+      "name": "SOLIDITY_ADDRESS_HARDCODED",
+      "patternId": "b140cd",
+      "severity": 1,
+      "line": 12,
+      "column": 52,
+      "content": "0x2a55205a"
+    },
+    {
+      "name": "SOLIDITY_LOCKED_MONEY",
+      "patternId": "30281d",
+      "severity": 3,
+      "line": 11,
+      "column": 0,
+      "content": "contractPhysicalAssetTokenisERC721URIStorage,Ownable,RoyaltiesV2Impl{bytes4privateconstant_INTERFACE_ID_ERC2981=0x2a55205a;usingCountersforCounters.Counter;Counters.Counterprivate_tokenIds;mapping(uint256=>uint256)publictokenLockedFromTimestamp;mapping(uint256=>bytes32)publictokenUnlockCodeHashes;mapping(uint256=>bool)publictokenUnlocked;eventTokenUnlocked(uint256tokenId,addressunlockerAddress);constructor()ERC721(\"PhysicalAssetToken\",\"PA\"){}function_beforeTokenTransfer(addressfrom,addressto,uint256tokenId)internaloverride{require(tokenLockedFromTimestamp[tokenId]>block.timestamp||tokenUnlocked[tokenId],\"PhysicalAssetToken: Token locked\");super._beforeTokenTransfer(from,to,tokenId);}functionunlockToken(bytes32unlockHash,uint256tokenId)public{require(msg.sender==ownerOf(tokenId),\"PhysicalAssetToken: Only the Owner can unlock the Token\");require(keccak256(abi.encode(unlockHash))==tokenUnlockCodeHashes[tokenId],\"PhysicalAssetToken: Unlock Code Incorrect\");tokenUnlocked[tokenId]=true;emitTokenUnlocked(tokenId,msg.sender);}functionmint(addressto,stringmemorymetadataURI,uint256lockedFromTimestamp,bytes32unlockHash)publiconlyOwner{uint256id=_tokenIds.current();tokenLockedFromTimestamp[id]=lockedFromTimestamp;tokenUnlockCodeHashes[id]=unlockHash;super._mint(to,id);super._setTokenURI(id,metadataURI);_tokenIds.increment();}functionsetRoyalties(uint256_tokenId,address<missing ')'>payable_royaltiesReceipientAddress,uint96_percentageBasisPoints)publiconlyOwner{LibPart.Part[]memory_royalties=newLibPart.Part[](1);_royalties[0].value=_percentageBasisPoints;_royalties[0].account=_royaltiesReceipientAddress;_saveRoyalties(_tokenId,_royalties);}"
+    },
+    {
+      "name": "SOLIDITY_PRAGMAS_VERSION",
+      "patternId": "23fc32",
+      "severity": 1,
+      "line": 2,
+      "column": 16,
+      "content": "^"
+    },
+    {
+      "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+      "patternId": "5616b2",
+      "severity": 1,
+      "line": 12,
+      "column": 11,
+      "content": "private"
+    },
+    {
+      "name": "SOLIDITY_PRIVATE_MODIFIER_DONT_HIDE_DATA",
+      "patternId": "5616b2",
+      "severity": 1,
+      "line": 14,
+      "column": 21,
+      "content": "private"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": 910067,
+      "severity": 1,
+      "line": 22,
+      "column": 4,
+      "content": "constructor()ERC721(\"PhysicalAssetToken\",\"PA\"){}"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": 910067,
+      "severity": 1,
+      "line": 68,
+      "column": 4,
+      "content": "functionsetRoyalties(uint256_tokenId,address<missing ')'>payable"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 70,
+      "column": 24,
+      "content": "_royaltiesReceipientAddress,"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 71,
+      "column": 8,
+      "content": "uint96_percentageBasisPoints)public"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 72,
+      "column": 13,
+      "content": "onlyOwner{LibPart."
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 73,
+      "column": 16,
+      "content": "Part[]memory_royalties=newLibPart.Part[](1);"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 74,
+      "column": 8,
+      "content": "_royalties[0].value=_percentageBasisPoints;"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 75,
+      "column": 8,
+      "content": "_royalties[0].account=_royaltiesReceipientAddress;"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 76,
+      "column": 8,
+      "content": "_saveRoyalties(_tokenId,"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 76,
+      "column": 33,
+      "content": "_royalties);"
+    }
+  ]
+}

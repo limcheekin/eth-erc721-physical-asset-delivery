@@ -1,8 +1,0 @@
-{
-  "contract": "AbstractRoyalties",
-  "tool": "manticore",
-  "start": 1635858186.3984802,
-  "end": 1635858187.427697,
-  "duration": 1.0292167663574219,
-  "analysis": []
-}
