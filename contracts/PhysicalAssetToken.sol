@@ -11,7 +11,7 @@ import "./@rarible/royalties/contracts/LibRoyaltiesV2.sol";
 contract PhysicalAssetToken is ERC721URIStorage, Ownable, RoyaltiesV2Impl {
     bytes4 private constant _INTERFACE_ID_ERC2981 = 0x2a55205a;
     using Counters for Counters.Counter;
-    Counters.Counter public tokenIds;
+    Counters.Counter private _tokenIds;
 
     mapping(uint256 => uint256) public tokenLockedFromTimestamp;
     mapping(uint256 => bytes32) public tokenUnlockCodeHashes;
@@ -56,13 +56,13 @@ contract PhysicalAssetToken is ERC721URIStorage, Ownable, RoyaltiesV2Impl {
         uint256 lockedFromTimestamp,
         bytes32 unlockHash
     ) public onlyOwner {
-        uint256 id = tokenIds.current();
+        uint256 id = _tokenIds.current();
         tokenLockedFromTimestamp[id] = lockedFromTimestamp;
         tokenUnlockCodeHashes[id] = unlockHash;
         super._mint(to, id);
         super._setTokenURI(id, metadataURI);
 
-        tokenIds.increment();
+        _tokenIds.increment();
     }
 
     function setRoyalties(
@@ -107,5 +107,13 @@ contract PhysicalAssetToken is ERC721URIStorage, Ownable, RoyaltiesV2Impl {
         }
 
         return super.supportsInterface(interfaceId);
+    }
+
+    function tokenIds()
+        external
+        view
+        returns (uint256)
+    {
+        return _tokenIds.current();
     }
 }

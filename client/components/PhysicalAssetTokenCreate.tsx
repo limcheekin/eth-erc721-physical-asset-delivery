@@ -20,14 +20,11 @@ export default function PhysicalAssetTokenCreate({
   account
 }: Props) {
   const [createOutput, setCreateOutput] = useState("")
-  const [unlockOutput, setUnlockOutput] = useState("")
   const [createButtonLoading, createButton] = useButton(createToken, 'Create')
   const [tokenUri, tokenUriInput] = useInput(createButtonLoading as boolean, 'Token URI')
   const [address, addressInput] = useInput(createButtonLoading as boolean, 'NFT Holder Address')
   const [lockFromDate, lockFromDateInput] = useSingleSelect(createButtonLoading as boolean, 'Lock From Date')
   const [unlockPassword, unlockPasswordInput] = usePasswordInput(createButtonLoading as boolean, 'Unlock Password')
-  const [unlockButtonLoading, unlockButton] = useButton(unlockToken, 'Unlock')
-  const [unlock, unlockInput] = usePasswordInput(unlockButtonLoading as boolean)
 
   async function createToken() {
     console.log('createToken')
@@ -54,22 +51,6 @@ export default function PhysicalAssetTokenCreate({
     }
   }
 
-  async function unlockToken() {
-    console.log('unlockToken')
-    try {
-      const unlockHash = web3.utils.sha3(web3.utils.sha3(unlock as string)) // double hash
-      console.log('unlockHash', unlockHash)
-      const result = await contract.methods.unlockToken(unlockHash, 0)
-        .send({ from: account })
-      console.log('result', result)
-      if (result?.status) {
-        setUnlockOutput('PA token 0 unlocked successfully.')
-      }
-    } catch (error) {
-      console.error('error in try...catch', error)
-    }
-  }
-
   return (
     <Grid mt="5" templateColumns="repeat(2, 1fr)" templateRows="repeat(3, 1fr)" gap={3}>
       <GridItem align="center" rowSpan={4}>
@@ -85,12 +66,6 @@ export default function PhysicalAssetTokenCreate({
       <GridItem colSpan={2}>{createButton}</GridItem>
       <GridItem colSpan={2}>
         <Text fontWeight="bold" textAlign="center">{createOutput}</Text>
-      </GridItem>
-
-      <GridItem align="end">{unlockButton}</GridItem>
-      <GridItem>{unlockInput}</GridItem>
-      <GridItem colSpan={2}>
-        <Text fontWeight="bold" textAlign="center">{unlockOutput}</Text>
       </GridItem>
     </Grid>
   )
