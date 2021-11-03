@@ -58,7 +58,6 @@ export default function PhysicalAssetTokenListItem({
     contract.methods.tokenURI(index).call().then((url: string) => {
       console.log('tokenURI', url)
       const httpUrl = getHttpUrl(url)
-      console.log('httpUrl', httpUrl)
       fetch(httpUrl)
       .then(async response => {
           const data = await response.json();
@@ -75,7 +74,6 @@ export default function PhysicalAssetTokenListItem({
           setImageUrl(getHttpUrl(data.image))
       })
       .catch(error => {
-          this.setState({ errorMessage: error.toString() });
           console.error('There was an error!', error);
       });
     });

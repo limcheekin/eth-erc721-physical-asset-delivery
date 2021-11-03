@@ -15,9 +15,9 @@ export default function PhysicalAssetToken() {
   const contract = web3 && contractAddress && new web3.eth.Contract(abiItems, contractAddress)
   const [items, setItems] = useState(null)
 
-  async function handleTabChange(index: number) {
-    console.log('index', index)
-    if (index === 1) {
+  async function handleTabChange(tabIndex: number) {
+    console.log('tabIndex', tabIndex)
+    if (tabIndex === 1) {
       const tokenIds = await contract.methods.tokenIds().call()
       console.log('tokenIds', tokenIds)
       setItems(_.range(tokenIds))
