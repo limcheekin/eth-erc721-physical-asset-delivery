@@ -1,0 +1,10 @@
+{
+  "contract": "IRoyaltiesProvider",
+  "tool": "manticore",
+  "start": 1635948370.1665113,
+  "end": 1635948393.2065368,
+  "duration": 23.04002547264099,
+  "analysis": [
+    []
+  ]
+}

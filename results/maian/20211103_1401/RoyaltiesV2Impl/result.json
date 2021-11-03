@@ -1,0 +1,12 @@
+{
+  "contract": "RoyaltiesV2Impl",
+  "tool": "maian",
+  "start": 1635948486.1012113,
+  "end": 1635948489.9383283,
+  "duration": 3.8371169567108154,
+  "analysis": {
+    "is_lock_vulnerable": false,
+    "is_prodigal_vulnerable": false,
+    "is_suicidal_vulnerable": false
+  }
+}

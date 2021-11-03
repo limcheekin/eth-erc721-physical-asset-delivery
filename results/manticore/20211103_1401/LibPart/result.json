@@ -1,0 +1,10 @@
+{
+  "contract": "LibPart",
+  "tool": "manticore",
+  "start": 1635948416.713928,
+  "end": 1635948418.6345096,
+  "duration": 1.920581579208374,
+  "analysis": [
+    []
+  ]
+}

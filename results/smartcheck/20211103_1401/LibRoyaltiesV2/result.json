@@ -1,0 +1,33 @@
+{
+  "contract": "LibRoyaltiesV2",
+  "tool": "smartcheck",
+  "start": 1635948458.6105223,
+  "end": 1635948462.8341515,
+  "duration": 4.2236292362213135,
+  "analysis": [
+    {
+      "name": "SOLIDITY_ADDRESS_HARDCODED",
+      "patternId": "b140cd",
+      "severity": 1,
+      "line": 9,
+      "column": 46,
+      "content": "0xcad96cca"
+    },
+    {
+      "name": "SOLIDITY_PRAGMAS_VERSION",
+      "patternId": "23fc32",
+      "severity": 1,
+      "line": 3,
+      "column": 16,
+      "content": "^"
+    },
+    {
+      "name": "SOLIDITY_VISIBILITY",
+      "patternId": "b51ce0",
+      "severity": 1,
+      "line": 9,
+      "column": 4,
+      "content": "bytes4constant_INTERFACE_ID_ROYALTIES=0xcad96cca;"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "contract": "PhysicalAssetToken",
+  "tool": "maian",
+  "start": 1635948510.0461314,
+  "end": 1635948514.3029802,
+  "duration": 4.2568488121032715,
+  "analysis": {
+    "is_lock_vulnerable": false,
+    "is_prodigal_vulnerable": false,
+    "is_suicidal_vulnerable": false
+  }
+}
