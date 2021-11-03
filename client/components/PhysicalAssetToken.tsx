@@ -14,20 +14,36 @@ export default function PhysicalAssetToken() {
   const [createOutput, setCreateOutput] = useState("")
   const [unlockOutput, setUnlockOutput] = useState("")
   const [createButtonLoading, createButton] = useButton(createToken, 'Create')
-  const [tokenUrl, tokenUrlInput] = useInput(createButtonLoading as boolean, 'Token URL')
+  const [tokenUri, tokenUriInput] = useInput(createButtonLoading as boolean, 'Token URI')
   const [address, addressInput] = useInput(createButtonLoading as boolean, 'NFT Holder Address')
   const [lockFromDate, lockFromDateInput] = useSingleSelect(createButtonLoading as boolean, 'Lock From Date')
   const [unlockPassword, unlockPasswordInput] = usePasswordInput(createButtonLoading as boolean, 'Unlock Password')
   const [unlockButtonLoading, unlockButton] = useButton(unlockToken, 'Unlock')
   const [unlock, unlockInput] = usePasswordInput(unlockButtonLoading as boolean)
   const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
-  const abiItems: AbiItem[] = web3 && JSON.parse(JSON.stringify(PhysicalAssetTokenContract.abi))
+  const abiItems: AbiItem[] = web3 && PhysicalAssetTokenContract.abi as AbiItem[]
   const contract = web3 && contractAddress && new web3.eth.Contract(abiItems, contractAddress)
 
   async function createToken() {
     console.log('createToken')
     try {
-      //await contract.methods.setGreeting(greeting).send({ from: account })
+      const metadataURI = metadata == null ? tokenUri : metadata.url
+      const timestampLockedFrom = Math.round(Date.parse(lockFromDate as string) / 1000)
+      const unlockPasswordHash = web3.utils.sha3(unlockPassword as string)
+      console.log('metadataURI', metadataURI)
+      console.log('lockFromDate', lockFromDate, 'timestampLockedFrom', timestampLockedFrom)
+      console.log('unlockPasswordHash', unlockPasswordHash)
+      console.log('address', address)
+      console.log('account', account)
+      const result = await contract.methods.mint(address, 
+                                                 metadataURI, 
+                                                 timestampLockedFrom, 
+                                                 unlockPasswordHash)
+                                           .send({ from: account })
+      console.log('result', result)
+      if (result?.status) {
+        setCreateOutput('PA token created successfully.')
+      }                                     
     } catch (error) {
       console.error('error in try...catch', error)
     } 
@@ -36,7 +52,14 @@ export default function PhysicalAssetToken() {
   async function unlockToken() {
     console.log('unlockToken')
     try {
-      //await contract.methods.setGreeting(greeting).send({ from: account })
+      const unlockHash = web3.utils.sha3(web3.utils.sha3(unlock as string)) // double hash
+      console.log('unlockHash', unlockHash)
+      const result = await contract.methods.unlockToken(unlockHash, 0)
+                      .send({ from: account })
+      console.log('result', result)
+      if (result?.status) {
+        setUnlockOutput('PA token 0 unlocked successfully.')
+      }
     } catch (error) {
       console.error('error in try...catch', error)
     } 
@@ -51,7 +74,7 @@ export default function PhysicalAssetToken() {
             <ImageUpload />
           </GridItem>
           <GridItem>
-            {metadata == null ? tokenUrlInput : 
+            {metadata == null ? tokenUriInput : 
             <Input isReadOnly={true} value={ metadata.url } />}
           </GridItem>
           <GridItem>{addressInput}</GridItem>
