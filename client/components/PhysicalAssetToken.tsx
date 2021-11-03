@@ -1,97 +1,39 @@
-import { Text, Grid, GridItem, Input, extendTheme } from "@chakra-ui/react"
-import { useState, useContext, useEffect } from "react"
+import { Tabs, TabList, TabPanels, Tab, TabPanel, Text } from '@chakra-ui/react'
+import { useContext } from "react"
 import { globalContext } from '../store'
 import { AbiItem } from 'web3-utils'
-import { useButton, useInput, usePasswordInput } from '../hooks/ui'
-import { useSingleSelect } from '../hooks/datepicker'
 import PhysicalAssetTokenContract from '../contracts/PhysicalAssetToken.json'
-import ImageUpload from './ImageUpload'
+import PhysicalAssetTokenCreate from './PhysicalAssetTokenCreate'
 
-// REF: https://dev.to/jacobedawson/send-react-web3-dapp-transactions-via-metamask-2b8n
 export default function PhysicalAssetToken() {
   const { globalState, dispatch } = useContext(globalContext)
   const { account, web3, metadata } = globalState
-  const [createOutput, setCreateOutput] = useState("")
-  const [unlockOutput, setUnlockOutput] = useState("")
-  const [createButtonLoading, createButton] = useButton(createToken, 'Create')
-  const [tokenUri, tokenUriInput] = useInput(createButtonLoading as boolean, 'Token URI')
-  const [address, addressInput] = useInput(createButtonLoading as boolean, 'NFT Holder Address')
-  const [lockFromDate, lockFromDateInput] = useSingleSelect(createButtonLoading as boolean, 'Lock From Date')
-  const [unlockPassword, unlockPasswordInput] = usePasswordInput(createButtonLoading as boolean, 'Unlock Password')
-  const [unlockButtonLoading, unlockButton] = useButton(unlockToken, 'Unlock')
-  const [unlock, unlockInput] = usePasswordInput(unlockButtonLoading as boolean)
   const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
   const abiItems: AbiItem[] = web3 && PhysicalAssetTokenContract.abi as AbiItem[]
   const contract = web3 && contractAddress && new web3.eth.Contract(abiItems, contractAddress)
 
-  async function createToken() {
-    console.log('createToken')
-    try {
-      const metadataURI = metadata == null ? tokenUri : metadata.url
-      const timestampLockedFrom = Math.round(Date.parse(lockFromDate as string) / 1000)
-      const unlockPasswordHash = web3.utils.sha3(unlockPassword as string)
-      console.log('metadataURI', metadataURI)
-      console.log('lockFromDate', lockFromDate, 'timestampLockedFrom', timestampLockedFrom)
-      console.log('unlockPasswordHash', unlockPasswordHash)
-      console.log('address', address)
-      console.log('account', account)
-      const result = await contract.methods.mint(address, 
-                                                 metadataURI, 
-                                                 timestampLockedFrom, 
-                                                 unlockPasswordHash)
-                                           .send({ from: account })
-      console.log('result', result)
-      if (result?.status) {
-        setCreateOutput('PA token created successfully.')
-      }                                     
-    } catch (error) {
-      console.error('error in try...catch', error)
-    } 
-  }
-
-  async function unlockToken() {
-    console.log('unlockToken')
-    try {
-      const unlockHash = web3.utils.sha3(web3.utils.sha3(unlock as string)) // double hash
-      console.log('unlockHash', unlockHash)
-      const result = await contract.methods.unlockToken(unlockHash, 0)
-                      .send({ from: account })
-      console.log('result', result)
-      if (result?.status) {
-        setUnlockOutput('PA token 0 unlocked successfully.')
-      }
-    } catch (error) {
-      console.error('error in try...catch', error)
-    } 
-  }
 
   return (
     <div>
-      { 
+      <Text fontWeight="bold" textAlign="center">Contract Address:</Text>
+      {
         account && (
-        <Grid mt="5" templateColumns="repeat(2, 1fr)" templateRows="repeat(3, 1fr)" gap={3}>
-          <GridItem align="center" rowSpan={4}>
-            <ImageUpload />
-          </GridItem>
-          <GridItem>
-            {metadata == null ? tokenUriInput : 
-            <Input isReadOnly={true} value={ metadata.url } />}
-          </GridItem>
-          <GridItem>{addressInput}</GridItem>
-          <GridItem>{lockFromDateInput}</GridItem>
-          <GridItem>{unlockPasswordInput}</GridItem>
-          <GridItem colSpan={2}>{createButton}</GridItem>
-          <GridItem colSpan={2}>
-            <Text fontWeight="bold" textAlign="center">{createOutput}</Text>
-          </GridItem>
-
-          <GridItem align="end">{unlockButton}</GridItem>
-          <GridItem>{unlockInput}</GridItem>
-          <GridItem colSpan={2}>
-            <Text fontWeight="bold" textAlign="center">{unlockOutput}</Text>
-          </GridItem>
-        </Grid>
-        ) 
+          <Tabs isFitted variant="enclosed">
+            <TabList>
+              <Tab>Create</Tab>
+              <Tab>List</Tab>
+            </TabList>
+            <TabPanels>
+              <TabPanel>
+                <PhysicalAssetTokenCreate contract={contract} web3={web3} 
+                  metadata={metadata} account={account} />
+              </TabPanel>
+              <TabPanel>
+                <p>Listing</p>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
+        )
       }
     </div>
   )
