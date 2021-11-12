@@ -31,7 +31,7 @@ export default function PhysicalAssetTokenCreate({
     try {
       const metadataURI = metadata == null ? tokenUri : metadata.url
       const timestampLockedFrom = Math.round(Date.parse(lockFromDate as string) / 1000)
-      const unlockPasswordHash = web3.utils.sha3(unlockPassword as string)
+      const unlockPasswordHash = web3.utils.sha3(web3.utils.sha3(unlockPassword as string)) // double hash
       console.log('metadataURI', metadataURI)
       console.log('lockFromDate', lockFromDate, 'timestampLockedFrom', timestampLockedFrom)
       console.log('unlockPasswordHash', unlockPasswordHash)

@@ -29,7 +29,7 @@ export default function PhysicalAssetTokenListItem({
   async function unlockToken() {
     console.log('unlockToken')
     try {
-      const unlockHash = web3.utils.sha3(web3.utils.sha3(unlock as string)) // double hash
+      const unlockHash = web3.utils.sha3(unlock as string)
       console.log('unlockHash', unlockHash)
       const result = await contract.methods.unlockToken(unlockHash, index)
         .send({ from: account })
