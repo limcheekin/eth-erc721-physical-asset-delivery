@@ -28,8 +28,8 @@ export default function PhysicalAssetToken() {
     <div>
       {
         account && (
-        <div>  
-          <Text fontWeight="bold" textAlign="center">Contract Address:</Text>
+        <div>
+          <Text mt={5} mb={5} fontWeight="bold" textAlign="center">Contract Address: {process.env.NEXT_PUBLIC_CONTRACT_ADDRESS}</Text>
           <Tabs isFitted variant="enclosed" onChange={ handleTabChange }>
             <TabList>
               <Tab>Create</Tab>
@@ -42,8 +42,8 @@ export default function PhysicalAssetToken() {
               </TabPanel>
               <TabPanel>
               { items && items.map( item => (
-                  <PhysicalAssetTokenListItem contract={contract} web3={web3}
-                  account={account} index={item} />
+                  <PhysicalAssetTokenListItem key={item} contract={contract} web3={web3}
+                    account={account} index={item} />
               ))}
               </TabPanel>
             </TabPanels>
