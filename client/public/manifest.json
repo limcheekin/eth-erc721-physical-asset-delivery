@@ -1,0 +1,31 @@
+{
+    "background_color": "#fff",
+    "display": "standalone",
+    "homepage_url": "https://github.com/limcheekin/eth-erc721-physical-asset-delivery",
+    "providedBy": {
+      "name": "Lim Chee Kin",
+      "url": "https://github.com/limcheekin/eth-erc721-physical-asset-delivery"
+    },
+    "icons": [
+      {
+        "src": "./images/192x192_App_Icon.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "./images/512x512_App_Icon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "orientation": "portrait",
+    "name": "NFT(ERC721) with Physical Asset Delivery and Secondary Royalties",
+    "description": "A simple dApps to demo a NFT known as Physical Asset Token with physical item delivery and secondary sales royalties (OpenSea, Rarible, Mintable - ERC2981).",
+    "iconPath": "./images/256x256_App_Icon.png",
+    "short_name": "eth-dapps-nextjs-boiletplate",
+    "start_url": ".",
+    "theme_color": "#ffffff",
+    "skylink": ""
+  }
