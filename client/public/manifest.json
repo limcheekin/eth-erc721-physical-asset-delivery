@@ -24,7 +24,7 @@
     "name": "NFT(ERC721) with Physical Asset Delivery and Secondary Royalties",
     "description": "A simple dApps to demo a NFT known as Physical Asset Token with physical item delivery and secondary sales royalties (OpenSea, Rarible, Mintable - ERC2981).",
     "iconPath": "./images/256x256_App_Icon.png",
-    "short_name": "eth-dapps-nextjs-boiletplate",
+    "short_name": "eth-erc721-physical-asset-delivery",
     "start_url": ".",
     "theme_color": "#ffffff",
     "skylink": "AQCYCUhVSrL7ZH_ytcnGvfWW4IifSlgCo_J6a6iNicQDeQ"
