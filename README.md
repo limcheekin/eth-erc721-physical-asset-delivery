@@ -1,4 +1,4 @@
-# Ethereum NFT(ERC721) with Physical Asset Delivery and Secondary Royalties [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Add to Homescreen](https://img.shields.io/badge/Skynet-Add%20To%20Homescreen-00c65e?logo=skynet&labelColor=0d0d0d)](https://homescreen.hns.siasky.net/#/skylink/)
+# Ethereum NFT(ERC721) with Physical Asset Delivery and Secondary Royalties [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![Add to Homescreen](https://img.shields.io/badge/Skynet-Add%20To%20Homescreen-00c65e?logo=skynet&labelColor=0d0d0d)](https://homescreen.hns.siasky.net/#/skylink/AQCYCUhVSrL7ZH_ytcnGvfWW4IifSlgCo_J6a6iNicQDeQ)
 
 <p>
   <img alt="made for ethereum" src="https://img.shields.io/badge/made_for-ethereum-771ea5.svg">
@@ -6,9 +6,9 @@
   <img alt="MIT license" src="https://img.shields.io/badge/license-MIT-blue.svg">
 </p>
 
-I think the NFT(ERC721) is an important use case that every Solidity developer needs to get familiar with besides ERC20. 
+I think the NFT(ERC721) is an important use case that every Solidity developer needs to get familiar besides ERC20. 
 
-The token known as `Physical Asset Token` with symbol `PA` as its involved physical item delivery. The seller of the NFT needs to specify "Lock From Date" and "Unlock Password" upon the NFT is minting. After the "Lock From Date" the NFT is locked. The buyer would not able to sell/transfer the NFT before he/she receive the physical item which has the "Unlock Password" attached.
+The token known as `Physical Asset Token` with symbol `PA` as its involved physical item delivery. The seller of the NFT needs to specify "Lock From Date" and "Unlock Password" upon the NFT is minting. After the "Lock From Date" the NFT is locked. The buyer would not able to sell/transfer the NFT before he/she receive the physical item with the "Unlock Password" attached.
 
 The project is created by referred to excellent tutorials on [ERC721](https://ethereum-blockchain-developer.com/120-erc721-supply-chain-aisthisi/00-aisthisi-project-overview/) and [Secondary Sales Royalties](https://ethereum-blockchain-developer.com/121-erc721-secondary-sales-royalties-erc2981/00-overview/) published by Thomas Wiesner.
 
@@ -18,7 +18,7 @@ The project is using the following third party libraries to simplify codes:
 - Reuse the [codes](https://github.com/rarible/protocol-contracts/tree/master/royalties/contracts) of `@rarible/royalties/contracts`.
 - Use `truffle-assertions` for writing unit tests.
 
-It is tested with [MetaMask](https://metamask.io/) Chrome extension and Android. I think it is good idea to test out [the dApp hosted on Skynet]() yourself before looking into the code.
+It is tested with [MetaMask](https://metamask.io/) Chrome extension and Android. I think it is good idea to test out [the dApp hosted on Skynet](https://0409g2a8al5b5ur4fvpbbie6nnqpdo48jt55g0l3u9t6na4dh7206u8.siasky.net/) yourself before looking into the code.
 
 The dApps is interacting with smart contracts running on Rinkeby testnet, hence you need some ETH in your wallet. If you don't have any, you can request some ETH from [Rinkeby Faucet](https://faucet.rinkeby.io/). 
 
@@ -132,7 +132,7 @@ Steps to run the client locally:
 
     - Mintable
 
-        Response from the Mintable Customer Support on 17 Nov 2021: _"I've made a check with the devs. Our Rinkeby Testnet is currently outdated. The devs are working on it to get it updated, unfortunately, I do not have an ETA on when it'll be updated. Hope this explains!"_
+        However, it is unable to view on Mintable as per response from the Customer Support on 17 Nov 2021: _"I've made a check with the devs. Our Rinkeby Testnet is currently outdated. The devs are working on it to get it updated, unfortunately, I do not have an ETA on when it'll be updated. Hope this explains!"_
 
 ## Continuous Integration
 The repository setup Continuous Integration build pipeline with GitHub Actions. If you use it as your project template, the first build will fail upon project creation. To fix it, you need to setup the `CC_SECRET` encrypted secret for Codechecks and `DOT_COVERALLS_YML` encrypted secret for Coveralls. Please refer to [Continuous Integration Setup](doc/ContinuousIntegrationSetup.md) for more information.
