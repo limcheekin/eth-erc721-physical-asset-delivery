@@ -8,12 +8,12 @@
 
 I think the NFT(ERC721) is an important use case that every Solidity developer needs to get familiar besides ERC20. 
 
-The token known as `Physical Asset Token` with symbol `PA` as its involved physical item delivery. The seller of the NFT needs to specify "Lock From Date" and "Unlock Password" upon the NFT is minting. After the "Lock From Date" the NFT is locked. The buyer would not able to sell/transfer the NFT before he/she receive the physical item with the "Unlock Password" attached.
+The token of the dApps known as `Physical Asset Token` with symbol `PA` as it is involved physical item delivery. The seller of the NFT needs to specify the "Lock From Date" and "Unlock Password" upon minting the NFT. The NFT is locked starting from the "Lock From Date". The buyer cannot sells/transfers the NFT until he/she unlocks the NFT with the "Unlock Password" that come with the physical item.
 
 The project is created by referred to excellent tutorials on [ERC721](https://ethereum-blockchain-developer.com/120-erc721-supply-chain-aisthisi/00-aisthisi-project-overview/) and [Secondary Sales Royalties](https://ethereum-blockchain-developer.com/121-erc721-secondary-sales-royalties-erc2981/00-overview/) published by Thomas Wiesner.
 
-The project is using the following third party libraries to simplify codes:
-- Use `nft.storage` to store the image of the NFT and metadata.json file to the IPFS. You can find out more about nft.storage [here](https://nft.storage/).
+The project is using the following third party libraries:
+- Use `nft.storage` to store the image of the NFT and metadata.json file to the IPFS. You can find out more about [nft.storage here](https://nft.storage/).
 - Use `@openzeppelin/contracts` for implementation of ERC721
 - Reuse the [codes](https://github.com/rarible/protocol-contracts/tree/master/royalties/contracts) of `@rarible/royalties/contracts`.
 - Use `truffle-assertions` for writing unit tests.
@@ -97,7 +97,7 @@ Steps to run the client locally:
     NEXT_PUBLIC_INFURA_PROJECT_ID=...
     NEXT_PUBLIC_NFT_STORAGE_API_KEY=...
     ```
-   As the `.env.local` file is not stored in the repo, for the deployment to Skynet, you need to add the content of the `.env.local` file as `DOT_ENV_DOT_LOCAL` secret.
+   As the `.env.local` file is not stored in the repo, you need to add the content of the `.env.local` file as `DOT_ENV_DOT_LOCAL` secret for Skynet deployment.
 
 3. Run the development server
     ```bash
@@ -113,15 +113,17 @@ Steps to run the client locally:
     
     As `truffle develop` exposes the blockchain onto port `9545`, you'll need to add a Custom RPC network of `http://localhost:9545` in your MetaMask to make it work.
 
-5. After connected to MetaMask from the main screen, you will see the following screen which allow you to upload image to the IPFS and mint the NFT by click on "Create" button.
+5. After connected to MetaMask from the main screen, you will see the following screen which allow you to upload image to the IPFS and mint the NFT by click on the "Create" button.
 
     ![Create Screen](https://github.com/limcheekin/eth-erc721-physical-asset-delivery/raw/master/doc/images/create.png "Create Screen") 
 
-6. After the token created successfully click the list tab to view it, you will see the following screen:
+6. After the token created successfully then click the list tab to view it, you will see the following screen:
 
     ![List Screen](https://github.com/limcheekin/eth-erc721-physical-asset-delivery/raw/master/doc/images/list.png "List Screen")
 
-7. After the NFT token minted in Rinkeby network, you can view it in the testnet/testsite of the following NFT marketplace:
+7. Run with Rinkeby network
+    
+    After the NFT token minted in the Rinkeby network, you can view it in the testnet/testsite of the following NFT marketplaces:
     - [OpenSea](https://testnets.opensea.io/assets/0x4e1e053c2515b20ddd66418de11f283bfc7e745a/0)
       
         ![OpenSea Screen](https://github.com/limcheekin/eth-erc721-physical-asset-delivery/raw/master/doc/images/opensea.png "OpenSea Screen")
