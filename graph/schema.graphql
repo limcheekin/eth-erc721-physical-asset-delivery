@@ -1,6 +1,32 @@
-type ExampleEntity @entity {
+type _Schema_
+  @fulltext(
+    name: "metadataSearch",
+    language: en
+    algorithm: rank,
+    include: [
+      {
+        entity: "Token",
+        fields: [
+          { name: "tokenURI" }
+        ]
+      }
+    ]
+  )
+
+
+type Token @entity {
   id: ID!
-  count: BigInt!
-  owner: Bytes! # address
-  approved: Bytes! # address
+  tokenId: BigInt!
+  tokenURI: String!
+  creator: User!
+  owner: User!
+  createdAtTimestamp: BigInt!
+  lockedAtTimestamp: BigInt!
+  unlocked: Boolean!
+}
+
+type User @entity {
+  id: ID!
+  tokens: [Token!]! @derivedFrom(field: "owner")
+  created: [Token!]! @derivedFrom(field: "creator")
 }

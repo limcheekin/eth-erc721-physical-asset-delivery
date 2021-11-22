@@ -107,6 +107,7 @@ dist
 
 # Build directories
 build/
+**/bin/
 
 # Ignore vscode
 .vscode/
