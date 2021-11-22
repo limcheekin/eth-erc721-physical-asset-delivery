@@ -116,3 +116,7 @@ gasReporterOutput.json
 
 # Ignore 'next export' out directory
 **/out/
+
+# Ignore generated directory
+**/generated/
+
